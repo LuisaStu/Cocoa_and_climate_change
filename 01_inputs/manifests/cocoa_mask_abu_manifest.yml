@@ -1,0 +1,112 @@
+status: complete_with_source_coverage_gaps
+archive:
+  path: 01_inputs\raw\cocoa_map_abu_2020\Detected_Cocoa_Farms.rar
+  size_bytes: 359225415
+  sha256: cbbe0bd7b7a0281101b10121bb1d3073c307df9714a79015ba5aaf3f24fd4323
+inputs:
+  GHA:
+    path: 01_inputs\raw\cocoa_map_abu_2020\Detected Cocoa Farms\GHAKakao.tif
+    sha256: 91db42810b0871e0fa637b55aa5fad8a588367d20752ea43c533581fb236941e
+  CIV:
+    path: 01_inputs\raw\cocoa_map_abu_2020\Detected Cocoa Farms\CIVKakao.tif
+    sha256: 36cf2059bf9f047f8f0a292c0622496eff08d28709abb3b93a76347643d6e046
+outputs:
+  01_inputs\processed\cocoa_mask_full_extent\cocoa_fraction_EPSG6933_11000m.tif: 07be24507d4e91e0c6b94d611a55ef7aab707d572432158630fcd63f1c17156d
+summary:
+  dataset: Cocoa Map for Cote d'Ivoire and Ghana
+  dataset_doi: 10.1594/PANGAEA.917473
+  dataset_url: https://doi.pangaea.de/10.1594/PANGAEA.917473
+  license: CC-BY-4.0
+  license_url: https://creativecommons.org/licenses/by/4.0/
+  authors:
+  - Itohan-Osa Abu
+  - Zoltan Szantoi
+  - Andreas Brink
+  - M Robuchon
+  - Michael Thiel
+  paper:
+    citation: Abu, I-O., Szantoi, Z., Brink, A., Robuchon, M., and Thiel, M. (2021).
+      Detecting cocoa plantations in Cote d'Ivoire and Ghana and their implications
+      on protected areas. Ecological Indicators, 129, 107863.
+    doi: 10.1016/j.ecolind.2021.107863
+    reported_source_resolution_m: 10
+    reported_producer_accuracy_percent: 82.89
+    reported_user_accuracy_percent: 62.22
+    source_time_note: The paper describes Sentinel imagery for 2019; this is a recent
+      footprint, not a historical cocoa-area time series.
+  source_rasters:
+    GHA:
+      path: 01_inputs\raw\cocoa_map_abu_2020\Detected Cocoa Farms\GHAKakao.tif
+      sha256: 91db42810b0871e0fa637b55aa5fad8a588367d20752ea43c533581fb236941e
+      crs: EPSG:4326
+      width: 49507
+      height: 71630
+      bounds:
+      - -3.25549459
+      - 4.738702955
+      - 1.191794887
+      - 11.173335335
+      resolution_degrees:
+      - 8.983152841012382e-05
+      - 8.983152840988414e-05
+      dtype: int16
+      nodata: -32768.0
+      sampled_class_values:
+      - 0
+      - 1
+    CIV:
+      path: 01_inputs\raw\cocoa_map_abu_2020\Detected Cocoa Farms\CIVKakao.tif
+      sha256: 36cf2059bf9f047f8f0a292c0622496eff08d28709abb3b93a76347643d6e046
+      crs: EPSG:4326
+      width: 67954
+      height: 70965
+      bounds:
+      - -8.59930272
+      - 4.361769862
+      - -2.4948910390000005
+      - 10.736664276
+      resolution_degrees:
+      - 8.983152840156576e-05
+      - 8.983152841541607e-05
+      dtype: int16
+      nodata: -32768.0
+      sampled_class_values:
+      - 0
+      - 1
+  target_grid:
+    crs: EPSG:6933
+    width: 115
+    height: 93
+    transform:
+    - 11000.0
+    - 0.0
+    - -869000.0
+    - 0.0
+    - -11000.0
+    - 1518000.0
+    resolution_m: 11000.0
+    pixel_area_m2: 121000000.0
+  method:
+    source_encoding: 'binary map: 1=cocoa, 0=not cocoa, -32768=nodata'
+    aggregation: Average resampling of the binary source class to the EPSG:6933 equal-area
+      grid; output is fractional mapped cocoa area per cell.
+    country_assignment: Use Ghana or Cote d'Ivoire source raster according to the
+      existing pixel-center country-code raster.
+    no_imputation: true
+  country_coverage:
+    GHA:
+      grid_cells: 1980
+      valid_grid_cells: 1980
+      uncovered_grid_cells: 0
+      coverage_percent: 100.0
+      cocoa_positive_cells: 1168
+      estimated_cocoa_area_ha: 2126351.902312406
+      mean_cell_fraction: 0.08875331282615662
+    CIV:
+      grid_cells: 2641
+      valid_grid_cells: 2640
+      uncovered_grid_cells: 1
+      coverage_percent: 99.96213555471412
+      cocoa_positive_cells: 1373
+      estimated_cocoa_area_ha: 3647137.5756803285
+      mean_cell_fraction: 0.11417286098003387

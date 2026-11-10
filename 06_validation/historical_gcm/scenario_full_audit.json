@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-05T15:22:55.622368+00:00",
+  "verified_files": 1344,
+  "country_cells": 4621,
+  "temperature_pairs": 336,
+  "temperature_inversions": 0,
+  "intermittent_missingness_files": 0,
+  "negative_flux_files": 0,
+  "license_counts": {
+    "CC-BY 4.0": 336,
+    "CC-BY-SA 4.0": 1008
+  },
+  "manifest_sha256": "b9253b65abdfc0cb02c0f852d5ade65b1180593e7ea28d0fc0f0fe53f13f26c2",
+  "script_sha256": "7b6ed5d93706b01dcc470a1c5d20d01fa591cb73a22f75cacbf6d67c830090cb"
+}

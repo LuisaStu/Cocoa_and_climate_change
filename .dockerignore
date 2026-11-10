@@ -1,0 +1,19 @@
+.dockerignore
+.git
+.gitignore
+.venv
+.mypy_cache
+.pytest_cache
+.ruff_cache
+__pycache__
+**/__pycache__
+pytest-cache-files-*
+.qa_*
+Docker Desktop Installer.exe
+13_env/*.lock
+01_inputs/raw
+01_inputs/processed
+01_inputs/external
+07_runs
+08_outputs
+10_figures

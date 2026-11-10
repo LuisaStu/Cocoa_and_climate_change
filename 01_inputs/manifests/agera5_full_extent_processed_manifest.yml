@@ -1,0 +1,1579 @@
+status: complete
+source_dataset: AgERA5 daily weather variables (Copernicus Climate Data Store)
+source_reference: https://doi.org/10.24381/cds.6c68c9bb
+period:
+  start_year: 2000
+  end_year: 2020
+target_grid:
+  path: 01_inputs/processed/grid_full_extent/model_grid_EPSG6933_11000m.tif
+  crs: EPSG:6933
+  resolution_m: 11000
+  country_grid_cells:
+    GHA: 1980
+    CIV: 2641
+  ambiguous_boundary_cells_excluded: 1
+method:
+  temporal_resolution: daily
+  spatial_resampling: GDAL average to equal-area target cells
+  country_mask: grid codes 1 and 2 only; outside and ambiguous cells are NoData
+  missing_data: No imputation; all assigned country cells required valid per day
+  variables:
+    precipitation:
+      key: precipitation
+      dataset_name: Precipitation_Flux
+      source_units: mm d-1
+      output_units: mm d-1
+      scale: 1.0
+      offset: 0.0
+      valid_min: 0.0
+      valid_max: null
+    reference_et:
+      key: reference_et
+      dataset_name: ReferenceET_PenmanMonteith_FAO56
+      source_units: mm d-1
+      output_units: mm d-1
+      scale: 1.0
+      offset: 0.0
+      valid_min: 0.0
+      valid_max: 30.0
+    solar_radiation:
+      key: solar_radiation
+      dataset_name: Solar_Radiation_Flux
+      source_units: J m-2 d-1
+      output_units: MJ m-2 d-1
+      scale: 1.0e-06
+      offset: 0.0
+      valid_min: 0.0
+      valid_max: 60.0
+    tmax:
+      key: tmax
+      dataset_name: Temperature_Air_2m_Max_24h
+      source_units: K
+      output_units: degC
+      scale: 1.0
+      offset: -273.15
+      valid_min: -80.0
+      valid_max: 70.0
+    tmean:
+      key: tmean
+      dataset_name: Temperature_Air_2m_Mean_24h
+      source_units: K
+      output_units: degC
+      scale: 1.0
+      offset: -273.15
+      valid_min: -80.0
+      valid_max: 70.0
+    tmin:
+      key: tmin
+      dataset_name: Temperature_Air_2m_Min_24h
+      source_units: K
+      output_units: degC
+      scale: 1.0
+      offset: -273.15
+      valid_min: -80.0
+      valid_max: 70.0
+    vpd:
+      key: vpd
+      dataset_name: Vapour_Pressure_Deficit_at_Maximum_Temperature
+      source_units: hPa
+      output_units: kPa
+      scale: 0.1
+      offset: 0.0
+      valid_min: 0.0
+      valid_max: 20.0
+  storage: One daily-band GeoTIFF per variable and year; band descriptions are ISO
+    dates
+outputs:
+  precipitation:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2000_EPSG6933_11000m.tif
+      sha256: 6d5addcdb3966d29ded7dae7a4ceea3bfc0e479a4efab91886d5587ce4904950
+      size_bytes: 3666122
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 174.38999938964844
+      units: mm d-1
+      input_sha256: ab7acd2146e0eb9e047bc861d068e1747ac7770d38433f94352f391193943b33
+      resumed_after_validation: true
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2001_EPSG6933_11000m.tif
+      sha256: 36f395260df7295d1fbe859c2f13ecb9432f0c8f869e617d4676ca3cc6b4159a
+      size_bytes: 3694668
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 160.22999572753906
+      units: mm d-1
+      input_sha256: 3e764415a31d2a2e1b667a290065554724924af5f8895febe8d8d503839504c2
+      resumed_after_validation: true
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2002_EPSG6933_11000m.tif
+      sha256: 708cfee163db08ca60fd76bfcb52ebabcaedb3471263a0aa70bacbd0469d8af2
+      size_bytes: 3718964
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 182.41000366210938
+      units: mm d-1
+      input_sha256: 0584b9e682699590ec275ba2352e0771994e7b6acc3e59aeac776c311d5db07d
+      resumed_after_validation: true
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2003_EPSG6933_11000m.tif
+      sha256: 1ab9190cbd40d15183b7d5e75380adaa5dc8fc9f19b989d1dbe518414ac9f7a9
+      size_bytes: 3776032
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 223.72999572753906
+      units: mm d-1
+      input_sha256: eed8bf362659f4ef819af2a0da5965ff67f62d7100c3f367d2c7a2e7041f60e0
+      resumed_after_validation: true
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2004_EPSG6933_11000m.tif
+      sha256: e89fb20240c832f503752aad9fb7b213cd9ef0a5f1a400abbffe6a2242e64e69
+      size_bytes: 3796824
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 158.11195373535156
+      units: mm d-1
+      input_sha256: a620f55c530889827b317d6ccfb21d552dbc83bd91417ebe784423ada95da51c
+      resumed_after_validation: true
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2005_EPSG6933_11000m.tif
+      sha256: c3c2f40fa93d6966c7d934d3efcd11750b0b6362c91532699a2eebe3cc943ceb
+      size_bytes: 3757202
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 183.61000061035156
+      units: mm d-1
+      input_sha256: 15f6826b60091a5b06ac0e80bc64ef7299edd6ebd37dab61e15a2dcaa6e44aa1
+      resumed_after_validation: true
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2006_EPSG6933_11000m.tif
+      sha256: b52e6d301875b225ee1c6de8dba756798e9a9c109a1f27d6f677084805a0e026
+      size_bytes: 3727480
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 144.14999389648438
+      units: mm d-1
+      input_sha256: 55765ce198c38f497508d3325060b09dfecbb96c7a1df74673aeb85b27f08695
+      resumed_after_validation: true
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2007_EPSG6933_11000m.tif
+      sha256: 87486f22e1f34f79ffe5dcd8077e9460873003db4070b1359b029ab59a3af6a2
+      size_bytes: 3649132
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 285.1300048828125
+      units: mm d-1
+      input_sha256: 1b3b49d1e81627efef64b6074ce4fac30ea363a94e9d1119466ce7dcfa4086d5
+      resumed_after_validation: true
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2008_EPSG6933_11000m.tif
+      sha256: 118cbc38447e1a2dd3cc26407b1481855ac3e0a126b7073fcd828fe62d0c4406
+      size_bytes: 3577146
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 210.0
+      units: mm d-1
+      input_sha256: 65b57cc39bc8db43a8316e8af4f9a61616811d64f085162bb0918e8d907f1259
+      resumed_after_validation: true
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2009_EPSG6933_11000m.tif
+      sha256: 8b458742e5f0c71ea1a31a0c65c97e0beb0270e4fd0ecba6f4f011dc41510b23
+      size_bytes: 3768730
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 195.38999938964844
+      units: mm d-1
+      input_sha256: bff82e7292ebc394ee076b07e3b5c3e85bf183e0f77b0471ab3892e8c726d167
+      resumed_after_validation: true
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2010_EPSG6933_11000m.tif
+      sha256: 8eff66185b107bccb3d62490e25c27dda015ed7da42e9d7c6d4a003836d5d927
+      size_bytes: 3785974
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 185.1999969482422
+      units: mm d-1
+      input_sha256: 6a7b871ba1e3e4743bceaee508569ba01fb8055a5abbc734796cb17306cf091a
+      resumed_after_validation: true
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2011_EPSG6933_11000m.tif
+      sha256: a597765707069c57eb71261f9df8e2316e647adac439e6344dc037fc81b7bfb2
+      size_bytes: 3736922
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 192.1199951171875
+      units: mm d-1
+      input_sha256: 036a824a1b5fb8f979afbfaf4bd5be6dcd8c80ab587d354a8f7b2cb4d6addd26
+      resumed_after_validation: true
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2012_EPSG6933_11000m.tif
+      sha256: 7cb66292a5fcc013468a9ac803977ce118091701f1bf26af09c9da0ececc1a5e
+      size_bytes: 3750818
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 160.2100067138672
+      units: mm d-1
+      input_sha256: afd2f6f1486a8b31f15f1cc52e496bedbc502752ef5656b252ac9731fb31e28b
+      resumed_after_validation: true
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2013_EPSG6933_11000m.tif
+      sha256: c5bef24b7387bb0d9d1dc6465611b9d8e4d2d8c4769e152dd13a7b5bbc33534e
+      size_bytes: 3706824
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 203.8000030517578
+      units: mm d-1
+      input_sha256: d2c1d2e26e600258e90d6a3b886cebab7fa73beab67924a5caaea2b14e7fc458
+      resumed_after_validation: true
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2014_EPSG6933_11000m.tif
+      sha256: cf8d10e4839a62a8f4652517a27695b9b60be7de751724377a2dccb9a75dd9be
+      size_bytes: 3802668
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 250.9499969482422
+      units: mm d-1
+      input_sha256: 89ef57cd6801254ea6c438a03a872eebca88a6a172a199fa8e5d93364eefca2d
+      resumed_after_validation: true
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2015_EPSG6933_11000m.tif
+      sha256: 086d4ab1cd8511c5853482f89612a9bb029a2b454e2e27466c6d616cd26d58fc
+      size_bytes: 3620398
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 220.55999755859375
+      units: mm d-1
+      input_sha256: bc45b4b104f49454b61c8c8e08aaa3c58965f7f7a60f2c124a48d2e1921434e7
+      resumed_after_validation: true
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2016_EPSG6933_11000m.tif
+      sha256: 741313737806c41057c712b4c2e35501362ba697783e3ab54d986cc8e4d3ad54
+      size_bytes: 3615832
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 210.5800018310547
+      units: mm d-1
+      input_sha256: 24b09f4daa80d9b15d56922ff0cf540bb6c439bc50726692dd93d74558c745bf
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2017_EPSG6933_11000m.tif
+      sha256: 24c366a96f5a697566142033092840bb394b38adf31dd73025ad35886c052c3a
+      size_bytes: 3635010
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 185.02000427246094
+      units: mm d-1
+      input_sha256: 8bbbbbdc10e6311da277c254b341b71c631bbea4c0f0149d48f4876d4611765f
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2018_EPSG6933_11000m.tif
+      sha256: 2999b1a9cd620802638e3bdeb4193cfdfc90a24ece6325f119d184daa6cb5d18
+      size_bytes: 3700288
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 195.0
+      units: mm d-1
+      input_sha256: 1a3c028db01f493a68570fe4f6e13249a6a6e7837ae1692c4f0f9cd0b3b609cd
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2019_EPSG6933_11000m.tif
+      sha256: 66210ea30252ec6651adffe390c1f7f9b603d33244e89de5c21b2bc98fb04954
+      size_bytes: 3704602
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 309.74713134765625
+      units: mm d-1
+      input_sha256: 71b20113418e0a10ddd5678337f4af8856e7c5361d930e500f6ebbb9492b25cc
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/precipitation_2020_EPSG6933_11000m.tif
+      sha256: 916df2426d5b685bb8e6565ef7bd92f86a574a24bee2fb3a229bded1730e6dfd
+      size_bytes: 3546260
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.0
+      maximum: 202.72000122070312
+      units: mm d-1
+      input_sha256: b723407d51ab1860a49780ed7442f06b9032d9b9570fb86084196dc47c7b17a9
+  reference_et:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2000_EPSG6933_11000m.tif
+      sha256: 5b0121792b9a82b848cd93528cba7b666d8e972662660b09c783b1718cd4098d
+      size_bytes: 5757478
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.307563066482544
+      maximum: 10.569066047668457
+      units: mm d-1
+      input_sha256: 8f0caa454e245474c976330ac0299c2b7064cb4b9c5cf35899c51e645f35ddf6
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2001_EPSG6933_11000m.tif
+      sha256: de0c1e49e6ffdfde0589cf76fd2c92e0e23385cb813a6222995d065b68edc300
+      size_bytes: 5750782
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.302107572555542
+      maximum: 9.800922393798828
+      units: mm d-1
+      input_sha256: 008e3b1ac42f1185156efe6b1a5b6c11f8092e7359017e82efdab5733424e07a
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2002_EPSG6933_11000m.tif
+      sha256: cff2fbb2d35ceecf86f1858687bf9dcd3c16ef4a7b8bb63a51ed9728862be526
+      size_bytes: 5749038
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.2331633567810059
+      maximum: 9.099414825439453
+      units: mm d-1
+      input_sha256: 8504029744c11cdb1212947b800564ae3b019c26e69bed6cfe748eea61037e1a
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2003_EPSG6933_11000m.tif
+      sha256: e2f9ad27f5cdedfa33a914ce265f8dd7adf2db099a937d4f881ec8c8803fbe1f
+      size_bytes: 5743354
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3066866397857666
+      maximum: 9.536922454833984
+      units: mm d-1
+      input_sha256: f1a7f489ee0a63847d1ce73e4b4a650728e79cd6c84ce014a93b44d8ef524a3d
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2004_EPSG6933_11000m.tif
+      sha256: fb482da2a5d5c144a945ace7f953f1e5685d8c88c5a79f58c54e498bfda9cc15
+      size_bytes: 5758522
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3901853561401367
+      maximum: 9.704992294311523
+      units: mm d-1
+      input_sha256: 667fb3e232743347f3baf154509cedd9020c545f337e1c99573a782fb3b8c0dc
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2005_EPSG6933_11000m.tif
+      sha256: 7c4a573a221f2250f162bbe58400b9b30b616b00aa14581bf7ea4eff9f1cbab2
+      size_bytes: 5744762
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3977330923080444
+      maximum: 9.498076438903809
+      units: mm d-1
+      input_sha256: a743b3a6cc60535b4397bbeea9c245482a4546b336589c1d93ce8973e9fb6f91
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2006_EPSG6933_11000m.tif
+      sha256: af898f2a0672bfaf9b71d7db26e2909bfbf54af80b77071e1c6362d658e8d98c
+      size_bytes: 5747400
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3864845037460327
+      maximum: 9.198906898498535
+      units: mm d-1
+      input_sha256: 0bd949abf6ee838f5f2b6e7dff4db7088b92f7ab1d56ca2c9167d60e2633cf4d
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2007_EPSG6933_11000m.tif
+      sha256: 6948ae7c9d2668f1e323b387d682542c093b103814671d35bafa14975860d98e
+      size_bytes: 5750934
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3798065185546875
+      maximum: 9.907942771911621
+      units: mm d-1
+      input_sha256: ab62521aece42cb4181927dbd93b006bf8a68ec55a461d0d45966ccda1790585
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2008_EPSG6933_11000m.tif
+      sha256: f34d5608e6a69dff836532ce2cfd129345a4ab02ba0c1385c244313f3adf130d
+      size_bytes: 5765294
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.0991662740707397
+      maximum: 10.20000171661377
+      units: mm d-1
+      input_sha256: 17e389d7a8acaafa4a99749c9020ad6ff2bd63d076c2a959f093dd23d734dffd
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2009_EPSG6933_11000m.tif
+      sha256: 2cc3dc0667b35088038c50a49c0dfcb544bbfd3acd0a55663e556a8a27651032
+      size_bytes: 5742132
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.2312639951705933
+      maximum: 9.100902557373047
+      units: mm d-1
+      input_sha256: c08f712c4002b4955a9bacf7dc9cb3611694230b49d0a7edf4d881beb92e6375
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2010_EPSG6933_11000m.tif
+      sha256: ea8778c7c65d27ef702b3d726ddfe62e194d4708a68181bb3257ad799577585a
+      size_bytes: 5741806
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.2992520332336426
+      maximum: 9.503758430480957
+      units: mm d-1
+      input_sha256: d1ad4abae8df88f9571bf4e6381109a5c6be49ea6df4033579030f32550fba19
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2011_EPSG6933_11000m.tif
+      sha256: 70a006ffc44738388a8b501e9fb05193fe410423baa30569dc0e509dc55cc9d6
+      size_bytes: 5744182
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.365006923675537
+      maximum: 9.469645500183105
+      units: mm d-1
+      input_sha256: 32c0f6002314674e12b857087cd194efa028298bbe965558b812bfbbc9f9963d
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2012_EPSG6933_11000m.tif
+      sha256: 313682b749e5b9ec6f19f06bcb11b7c44f5f50918c900c8dbce8589e7dcf6cbf
+      size_bytes: 5765932
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.3140398263931274
+      maximum: 9.853048324584961
+      units: mm d-1
+      input_sha256: 78b550ca052a3b977bb200b24d489ede4ba43da24831a4c376443bcfdc22e7d3
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2013_EPSG6933_11000m.tif
+      sha256: 7ba7563a2f9c919893f29965c8703e7ac9790805dbf27c91e966f65a7bbc3a85
+      size_bytes: 5749090
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.4214595556259155
+      maximum: 9.967246055603027
+      units: mm d-1
+      input_sha256: 6ea3d8f98ecdeaa87c5ea3d6e17ddb262dbf4f2ab54ae5387826a8395e9d6ab5
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2014_EPSG6933_11000m.tif
+      sha256: 53a253e26353ce2641f34959b3d3534901fe6e6c412061d8e10e6b09a4274168
+      size_bytes: 5749098
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.265750765800476
+      maximum: 9.221531867980957
+      units: mm d-1
+      input_sha256: c6aed036bddf7ee24a8d5216084d7d1d8ce04aead9f4e6714e1792c133b5bd96
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2015_EPSG6933_11000m.tif
+      sha256: 1fc4c66bd05bb6d16df63be3c781857bcd1067e376ab7ed34c6e7d55f12b7769
+      size_bytes: 5752168
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.2986512184143066
+      maximum: 9.281059265136719
+      units: mm d-1
+      input_sha256: 2b9f860d3ce10791c8b93e6bdd50465a465fa581c7cb9f7db3c76540a6f36970
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2016_EPSG6933_11000m.tif
+      sha256: d3ce35280a1df50973445e98e32194a8eaf4c6f5dc452ddff59d5481c01bb987
+      size_bytes: 5764362
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.1932454109191895
+      maximum: 9.39437198638916
+      units: mm d-1
+      input_sha256: 6278679cd3d98b94e146a042ea2feb2db5a970e08325cf159ccf117d7ce3a9c1
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2017_EPSG6933_11000m.tif
+      sha256: 20bc5f0ad7b7d7b515aa5cde15ca5a45852edb715e2d2090eb14d74a7128f441
+      size_bytes: 5742866
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.1993598937988281
+      maximum: 10.100944519042969
+      units: mm d-1
+      input_sha256: c54dd824458b053cab5859d4fffe6f7812d907664242a9de23a3f7f6e11370e2
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2018_EPSG6933_11000m.tif
+      sha256: a8b4d1635a01476850601a335c5fb6acdad66a5cc30fbd553ee99aa629d96cb1
+      size_bytes: 5748238
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.372083306312561
+      maximum: 9.112835884094238
+      units: mm d-1
+      input_sha256: 612cbdd317679d40f1b58b486c1ed4801e2e4dea26fffe108fc30f6e114579fa
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2019_EPSG6933_11000m.tif
+      sha256: bc0919103937d752e64faa082cec73d786e276d41ab033d4df684f0ab02bb7e2
+      size_bytes: 5746588
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.1870753765106201
+      maximum: 9.3145112991333
+      units: mm d-1
+      input_sha256: 6bfb7620192a6e93d20f1b999ae3804f82668c62f45df1fc6a61e0854bd84802
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/reference_et_2020_EPSG6933_11000m.tif
+      sha256: 2b4df5aef4a41e307536952da272556c3c4792d72f50c81a30ec3158260bcc8f
+      size_bytes: 5763664
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 1.2524040937423706
+      maximum: 9.846376419067383
+      units: mm d-1
+      input_sha256: 1f7008ea9b4efb5ddd4cadfcc40f44d002140f8e857790f3317f50a8487b63b2
+  solar_radiation:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2000_EPSG6933_11000m.tif
+      sha256: 39226bff8a435d50b5b29927bd38f15b9206daae3aaec0062b49f58a7204ed35
+      size_bytes: 5515022
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.615860462188721
+      maximum: 26.146820068359375
+      units: MJ m-2 d-1
+      input_sha256: a7f98e542da72f9bbd2545be3e330fd9ad46271a20f5588e2d52514dbeaddace
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2001_EPSG6933_11000m.tif
+      sha256: 18a86df75f9a40fd58433149f18281c6884a36e6c65bd4e46864badf8d65fc08
+      size_bytes: 5509476
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.689002513885498
+      maximum: 26.008983612060547
+      units: MJ m-2 d-1
+      input_sha256: 4c0bf0c95c650048a64230522c325d7fd8f8acd84f3ca14be29672edc07ae7db
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2002_EPSG6933_11000m.tif
+      sha256: 1e68a2ab12e4de07775be3d9658a4b435009000231f862feb96c4399b6871212
+      size_bytes: 5512824
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.098278999328613
+      maximum: 25.485427856445312
+      units: MJ m-2 d-1
+      input_sha256: 69acb17f0a6ea3b215aa20b4ea5afd29b003718c2d0072e8fbadce733ebf8a07
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2003_EPSG6933_11000m.tif
+      sha256: fd95459be529d4d44e3e7fa3b2bc429ce3f56a966aa836aac0136b0fbd6b71be
+      size_bytes: 5519086
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.812974452972412
+      maximum: 26.41617774963379
+      units: MJ m-2 d-1
+      input_sha256: 0ac1de1241f79734b7cea13e05ee1f0e9b0b6e8e4837f245a3501cad07829c29
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2004_EPSG6933_11000m.tif
+      sha256: 506ec997561e1d599ee61e566c4b45c1728c21277571c9e0535d88d614f478c1
+      size_bytes: 5530068
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.677761077880859
+      maximum: 25.942367553710938
+      units: MJ m-2 d-1
+      input_sha256: a9193a0d122adc57463beb90d306a1299eac684d1bd2b41a47e0c5acad0a2d85
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2005_EPSG6933_11000m.tif
+      sha256: 7fcd3f0e5ce81487f14b8acb9767325e47c4f3d3d084eba730cef43f8d1dd199
+      size_bytes: 5517760
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.231041431427002
+      maximum: 25.902637481689453
+      units: MJ m-2 d-1
+      input_sha256: 2322c327063454984bec3b6c16f7448b844531a3d99a7850064b6a9d3c254848
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2006_EPSG6933_11000m.tif
+      sha256: d994f44034ab8712a7b034795367b1731c6164ee9c764e5cc26cf12af3baf74d
+      size_bytes: 5509104
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.457982540130615
+      maximum: 26.831729888916016
+      units: MJ m-2 d-1
+      input_sha256: baa8623a5a588a3facf5d703761b7d047578625b2aed834554fb199681956a2b
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2007_EPSG6933_11000m.tif
+      sha256: 189f43a16311e10a246750113da5f3f5e82e98eac3b801097bef216943e03c3c
+      size_bytes: 5512874
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.0707902908325195
+      maximum: 25.626937866210938
+      units: MJ m-2 d-1
+      input_sha256: 3593b4de17b61696417d73686aa77af3ea5ecaa1640c0c3be47daee12ae80efb
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2008_EPSG6933_11000m.tif
+      sha256: b6ae9f0e935e954b05a5ecd0f420a08041dd47f98be47f8c75f182eafcf21134
+      size_bytes: 5521298
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 3.642897844314575
+      maximum: 26.983545303344727
+      units: MJ m-2 d-1
+      input_sha256: 51b7b8e9af8f120761fd4855af00742fc3ad2a89cf9ce51c492e7ad20f24a6fd
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2009_EPSG6933_11000m.tif
+      sha256: 84ca19bd6dc08d4039c98ea0ef3e6f2a42e6063147d67effa874b8f4db7c8e1b
+      size_bytes: 5520546
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.324746131896973
+      maximum: 26.009693145751953
+      units: MJ m-2 d-1
+      input_sha256: 7b6f12f37ad2a2e61da3ea32bd49e1ff2f9b8f0b389954c53c644b6582aeea21
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2010_EPSG6933_11000m.tif
+      sha256: 83f519dee25f587c6be908074c02b2965f6b82fb70990ff1fbde5d0142a3c2c9
+      size_bytes: 5521804
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.1159586906433105
+      maximum: 26.64097023010254
+      units: MJ m-2 d-1
+      input_sha256: 9806f73004f700c0d7513c40696a97c0fc95e3bffc53842005eded982fa3e1a2
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2011_EPSG6933_11000m.tif
+      sha256: de02140f892654bdd740fcd431873a042eb5f2ef20c4b5074545be6c6875d2ff
+      size_bytes: 5511500
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.074834823608398
+      maximum: 27.005714416503906
+      units: MJ m-2 d-1
+      input_sha256: 129455fc0b62ce8183d97cdc2553284ca119ca4bd91172403eb45a66cf04150d
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2012_EPSG6933_11000m.tif
+      sha256: 040d97343c2c2703275ce55a5bb40a4366aabbe011ac2f317d6ff6f4fa438642
+      size_bytes: 5540086
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.222442626953125
+      maximum: 26.390674591064453
+      units: MJ m-2 d-1
+      input_sha256: 37b1ced1be9013b3bcf4608e7beac4d3cd9d8e5f8cb8f24624e122fc97a8fd76
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2013_EPSG6933_11000m.tif
+      sha256: 207281fb6d7dc4b0cb99733fb51e1d6f0ca85a5e8fd6d5dae3183e41ed539e51
+      size_bytes: 5522994
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.6210784912109375
+      maximum: 25.4414005279541
+      units: MJ m-2 d-1
+      input_sha256: bd73eaadbe9e728c2f8ed302d25e9289fd02aae97b655cbca307c00292db9835
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2014_EPSG6933_11000m.tif
+      sha256: e05e8ba690218ec8f8e3b12e59d61a107b4d343aaa63fb94deb48bf98528e757
+      size_bytes: 5527330
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 3.985430955886841
+      maximum: 25.54924774169922
+      units: MJ m-2 d-1
+      input_sha256: 393e2149db20e7732a1dd47090119921ce1a89bf5a837015110e2e600cc7cce7
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2015_EPSG6933_11000m.tif
+      sha256: d1b4ae0dc3ec3d563c9b90e3e0e91e006c7d8c02c0583fd496fdf0164f619760
+      size_bytes: 5513670
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.554255485534668
+      maximum: 27.66280174255371
+      units: MJ m-2 d-1
+      input_sha256: f3cf20c8183cd2992e5437ccd3169489580dda0fc0224b183d35cef2dc65faa0
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2016_EPSG6933_11000m.tif
+      sha256: 291194baf03b5354656254262fed0ff478d23896d5eb13372d167bc083f5ca70
+      size_bytes: 5524974
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 3.9148640632629395
+      maximum: 25.831321716308594
+      units: MJ m-2 d-1
+      input_sha256: 8f751ab48f66ca22ed56c9d8b3599f82d4f3d9fc1bab6700b1b5319971a16fec
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2017_EPSG6933_11000m.tif
+      sha256: 9b2bcf64778ff9a17ec235a395044b73319ac9fcc29a8f0a1ab0c2f27f26c7ac
+      size_bytes: 5513022
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 3.9680230617523193
+      maximum: 27.15512466430664
+      units: MJ m-2 d-1
+      input_sha256: b07270c1079ce5981166a608dcc25e35790cc3bfada7c7208ead9fb537cbb1db
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2018_EPSG6933_11000m.tif
+      sha256: e7b2b75ce481e8ca80c6ff56b7e0ecb9bccf1d2abf4397e4143bc35d0b608a2b
+      size_bytes: 5518456
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.407948970794678
+      maximum: 26.013263702392578
+      units: MJ m-2 d-1
+      input_sha256: faa81849f59ea4967422b40f9486b5b952124eee3d50076318482a3133c44bf5
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2019_EPSG6933_11000m.tif
+      sha256: ed426083208d6220d7bdbc07044f88cea91aeaa441131a582bfe8e55b0b10548
+      size_bytes: 5524050
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 3.675990343093872
+      maximum: 25.629880905151367
+      units: MJ m-2 d-1
+      input_sha256: 73ec6664b8f2110e1c5be7a16e0b630758758f9a0e604ab793275cf442392c46
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/solar_radiation_2020_EPSG6933_11000m.tif
+      sha256: ab8656fbf4ff1d500ce7f3674a86baa6ac0cb498886534055a90ba8e455d8cb8
+      size_bytes: 5523098
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 4.4672651290893555
+      maximum: 26.163606643676758
+      units: MJ m-2 d-1
+      input_sha256: 360864149e94e8b21dc40d1a79015eff637bb52bfd87f272e06a9a5ece85787f
+  tmax:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2000_EPSG6933_11000m.tif
+      sha256: abf63aa32faa4f3e180b30c4a201b17c398868f4fed53c48554a28eaa2c41733
+      size_bytes: 5648818
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.437767028808594
+      maximum: 40.31032180786133
+      units: degC
+      input_sha256: c2a72739b6af069777e181c17cd9876d8a642bd401ad35156df9576e90dc0583
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2001_EPSG6933_11000m.tif
+      sha256: aa277c6c24965235b87cb7ebc7f0a82fd49efcfebbf838ef75309a30ae272be9
+      size_bytes: 5621848
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 20.952943801879883
+      maximum: 41.17352294921875
+      units: degC
+      input_sha256: a4044896b11530750a230884344e2ea6daf2e6f9503c06e753a8f2999a9c307e
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2002_EPSG6933_11000m.tif
+      sha256: ba2d43eef95284723f4a58e3750e2ed9bfdc938ccfddc730cda93489895f428e
+      size_bytes: 5629236
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.151655197143555
+      maximum: 41.22489929199219
+      units: degC
+      input_sha256: 274cc4d3310dc1cf2ed0c8897fabc61ab99e4721672a19a829ed6852b7731c86
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2003_EPSG6933_11000m.tif
+      sha256: 778112a38f1a7b1fc1520aea5fcb1d4602ecb1a4da5bfc1d64e376fc2323cab4
+      size_bytes: 5631308
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.373159408569336
+      maximum: 41.7873420715332
+      units: degC
+      input_sha256: 95f758dd401ec29c9d35ac4e65d9503fbf32dc7116c6d340458ed3fd1ed68f90
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2004_EPSG6933_11000m.tif
+      sha256: 679b6235949c0b57ac40a83fb32ab660e7783269bcc739ff0a9af61db2f2188b
+      size_bytes: 5649520
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.816896438598633
+      maximum: 40.62318801879883
+      units: degC
+      input_sha256: 8256d153cf13b7414f04b9642e61bdcffb9ceabf7e74c085afde6d856425f5f7
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2005_EPSG6933_11000m.tif
+      sha256: 0caaf4be7f7778d5cfaf4cfbd016a7cec64aafd9dcb5cadf49eb7144af2b4f5e
+      size_bytes: 5635128
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.827939987182617
+      maximum: 41.32809066772461
+      units: degC
+      input_sha256: dd8cc8e3839117130ba5d993b8fa8088ec90d85f68a5b864c7290786ab588812
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2006_EPSG6933_11000m.tif
+      sha256: 87e5806931cc39e393c17d0f2efefce749ab60825cdc2a0e0101a5341e4f8fb0
+      size_bytes: 5632324
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.63002586364746
+      maximum: 41.16759490966797
+      units: degC
+      input_sha256: 1877e26006d1317442dfa0c4146c021dace2614222949178fa16599713a60cee
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2007_EPSG6933_11000m.tif
+      sha256: cc1208f6d3caeed36c2dcbb7a270f73b9296c68c4b8a7e8813a1dc8ff5eade73
+      size_bytes: 5629436
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 22.00816535949707
+      maximum: 41.19002914428711
+      units: degC
+      input_sha256: d5cea442245751421a3a99eec51b933b22163efda3ac2de6311c22cf83a29403
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2008_EPSG6933_11000m.tif
+      sha256: b1e30d4ee692d92be4d24346585598db6ca3ff74f2e930eaaaec2df706956ae1
+      size_bytes: 5633426
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.00052261352539
+      maximum: 40.71220779418945
+      units: degC
+      input_sha256: d42c4fab83bd8698062d093a37decca276b9986520fa6d57a2e8b9736950dd2c
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2009_EPSG6933_11000m.tif
+      sha256: 912f41b60875d2eb28dd65f8ad2d68ba5c0cd766c8e10d05b9e58922a689b38c
+      size_bytes: 5629656
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.286962509155273
+      maximum: 40.910099029541016
+      units: degC
+      input_sha256: 03bed5a58d4bb8e667da262dfd013021d551c2d1b6912d86e45b9518d313f864
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2010_EPSG6933_11000m.tif
+      sha256: ccdba4a43efcc477bb21bcdb9d20094a35ea66dcb207ef67ce48667ad2aba888
+      size_bytes: 5616034
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.36846351623535
+      maximum: 41.55231857299805
+      units: degC
+      input_sha256: 718af8fd3b62d3ae0af2b2fff1956abbec3236bb3c43fe0a351c1a0f3e0c3d5f
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2011_EPSG6933_11000m.tif
+      sha256: 6e8dd729bba88eafd321b10acdba68348e44386a0709a9b7397feb605c6e779b
+      size_bytes: 5624680
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 22.178598403930664
+      maximum: 41.33229064941406
+      units: degC
+      input_sha256: 8f79602cb086a76bb565657d7b565750eefc1cd972715c97bb8d8c5ce08d3bdc
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2012_EPSG6933_11000m.tif
+      sha256: aff3aa82e7dfa0196226b39337a858f65f704a9f385a81b80d57fd3302c8b31b
+      size_bytes: 5643608
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.456083297729492
+      maximum: 40.844459533691406
+      units: degC
+      input_sha256: 6b73e842fe6ee44f87a0d1e8fb14edcb401355c3d47afeb5714cc5ede4626cc5
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2013_EPSG6933_11000m.tif
+      sha256: 9886984909ffc82295b0c4bd1295c511603f307c3a44866c2f29acf6007a6523
+      size_bytes: 5621846
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.012611389160156
+      maximum: 41.838829040527344
+      units: degC
+      input_sha256: 15bf250f8e10f90d75209cc0cb9b8ff9faefd2ce38910605a7f10bdd508f479b
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2014_EPSG6933_11000m.tif
+      sha256: 8c0b71677340e2377e38d18567b924a3495566ee958c871b76b65e85041ed10b
+      size_bytes: 5626064
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.716615676879883
+      maximum: 40.47891616821289
+      units: degC
+      input_sha256: 86f70e4bf715109e467f44d5e815a7c584b0439f2fc5f6428ccc51a182b5c852
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2015_EPSG6933_11000m.tif
+      sha256: 25f8a73ea2136828c9ad1543e777ef37e154d6b8a27ed763c3864b6af53f9d6b
+      size_bytes: 5628574
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.937105178833008
+      maximum: 40.87393569946289
+      units: degC
+      input_sha256: 77304781aeda34b5558ed4cb0b346e73047d191c4eaef5b5de74d0984f4d9db9
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2016_EPSG6933_11000m.tif
+      sha256: 2bc3877333c2cdb428e8e87e87fd7b3f3a238d25af9b9d65b76e104ac30dbf45
+      size_bytes: 5627580
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 20.77587890625
+      maximum: 42.43913269042969
+      units: degC
+      input_sha256: fed8231ba77ce7c3596f3be2bff7a53c3d77a7308f506d7026fe557518f18490
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2017_EPSG6933_11000m.tif
+      sha256: 9ed6c9e9f18e310312e7761b4a592dec8254746a0f12a2cb87138d199ab4433e
+      size_bytes: 5612630
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.35165023803711
+      maximum: 40.94734191894531
+      units: degC
+      input_sha256: 1acfc02a0b003d4db1afd69cd1bbfa8c258112aaa1c2142cca79fb2ed6d440ca
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2018_EPSG6933_11000m.tif
+      sha256: 24e574348abe658f48eb95bb428c821794bd3894dea531ce6634d84c3cbdc4e3
+      size_bytes: 5619626
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.97823715209961
+      maximum: 40.66073226928711
+      units: degC
+      input_sha256: e0c377b6d278a65b5710f6a85f225f92d6944970241788e483737dc1ee8f2f7c
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2019_EPSG6933_11000m.tif
+      sha256: 8ed61fa9243756c25ac4d61db710f7580f5e23bb01a907b4ad7155e5c3156d89
+      size_bytes: 5608496
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.75602912902832
+      maximum: 41.66262435913086
+      units: degC
+      input_sha256: 293e8a36206cf816186825ec88e3332edc2f0e01b657f92c767874424ef12b60
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/tmax_2020_EPSG6933_11000m.tif
+      sha256: a575410f119bbb56d240b649ce2b34d5f1262f05f837cd40b84ad54685373a72
+      size_bytes: 5617546
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 21.804819107055664
+      maximum: 41.37169647216797
+      units: degC
+      input_sha256: e02120fb30789bfc7f4576c046b09b1d75a80f3a09683c5523a080cb703cd984
+  tmean:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2000_EPSG6933_11000m.tif
+      sha256: d82146dd16664aee385bfc0fedbff268e8ea00d5bb73de97c272a9f8cca04fb6
+      size_bytes: 5577430
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.388832092285156
+      maximum: 34.354000091552734
+      units: degC
+      input_sha256: d4840226da22ba8b6a8b8983af514efd6f84bd295baf92bd984c7e9a662f3b41
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2001_EPSG6933_11000m.tif
+      sha256: e1d686dd950c86e4d38562f25b82e6a7cb894f693a9d086a7109cfac10a2f276
+      size_bytes: 5569836
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.266845703125
+      maximum: 34.6494026184082
+      units: degC
+      input_sha256: 8a94c59db1640ecdbc76687b4269c4441fc911d979a0b72c2fb11d3048285817
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2002_EPSG6933_11000m.tif
+      sha256: 34fc7d43d39f625c635a0728bc349f880d04b6c1cf993f51a0ea46ec078b17d5
+      size_bytes: 5569392
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.359193801879883
+      maximum: 34.78728485107422
+      units: degC
+      input_sha256: a650cc8131a9bbb4187bf5193d521a9b72b966a186e824a763402ee5f899e493
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2003_EPSG6933_11000m.tif
+      sha256: 5550523ff2ac93947184e90d1678d142276a7372ad566e814400cfe61f5f195e
+      size_bytes: 5567582
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.5430850982666
+      maximum: 34.81692886352539
+      units: degC
+      input_sha256: f27b71a6b0dd3d5abb9a3d6da0e4e0b8918a7e5142e46656be0c5fd24777616e
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2004_EPSG6933_11000m.tif
+      sha256: 46fa2bcd853037a2bb1b1e7e7687ba71ca6be42b0b2c3e08e93eccd0c75a3f29
+      size_bytes: 5584914
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.854352951049805
+      maximum: 34.86109924316406
+      units: degC
+      input_sha256: c066c8adb803db775d411c4d7a8295905083929b27edc7c9efc8d211e52c85a4
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2005_EPSG6933_11000m.tif
+      sha256: f0c96065f4ebddcc6600c54cb39117297300f9ecaadd785ae517ec0f21b4cdfd
+      size_bytes: 5571322
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.986936569213867
+      maximum: 34.637454986572266
+      units: degC
+      input_sha256: 580bd76a3799c2d3d9fe1a29fcf36c18f87bd47f0f2e541f61e9a7649dd7fb69
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2006_EPSG6933_11000m.tif
+      sha256: d7728d68b998b9709d8d0183987397eb5295dc8a141e77ceba2cbf56f03df742
+      size_bytes: 5574802
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.734357833862305
+      maximum: 34.90606689453125
+      units: degC
+      input_sha256: a71549ed980d0ba5ba0baf75b3ad113925b18ad70a34d02a15aec5f3299bae0f
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2007_EPSG6933_11000m.tif
+      sha256: 04aed9ca6db9c6cd37be1460f272113cebd8ca0fa9d6d211fd87df5c7311449c
+      size_bytes: 5571412
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.935386657714844
+      maximum: 35.04557800292969
+      units: degC
+      input_sha256: 07c498527885b7a8971c2440df8102c627654d314053889a0fc0d61c2972ae33
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2008_EPSG6933_11000m.tif
+      sha256: 2bef7eda28cd4c673ab97e194f0cf7dd634d32a7b41809c008de8bb38a021180
+      size_bytes: 5583564
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.257139205932617
+      maximum: 34.296112060546875
+      units: degC
+      input_sha256: a17503789dd03d0cc222db59785913219cd5a42464837dce40a1def8ebe849ca
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2009_EPSG6933_11000m.tif
+      sha256: 96d71bae05e909ac6782759f70092b65e4f41388046f14dabaec1d24356e52fb
+      size_bytes: 5572066
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.832992553710938
+      maximum: 34.615291595458984
+      units: degC
+      input_sha256: e363867086fbada8f864012fb26365331fe87fceb20c7413b0206943d633fbb0
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2010_EPSG6933_11000m.tif
+      sha256: 5409d7ad01703165a5559bff7abd65de47811124c30811dee0030922547db3d9
+      size_bytes: 5567434
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.653593063354492
+      maximum: 35.33188247680664
+      units: degC
+      input_sha256: b57ce2346492436df04ecad7992906ee258cb9cf4f6b19ad567bdd83ecd9d397
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2011_EPSG6933_11000m.tif
+      sha256: 54e700d15048dadc992073a9100de4a36efb0f5fe518810595c2f3c44c20c1fd
+      size_bytes: 5571850
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.948715209960938
+      maximum: 34.74025344848633
+      units: degC
+      input_sha256: 6426bd8d19e052b299743186d59921d5a4e1e97d3d9108405decb9d37c05cee6
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2012_EPSG6933_11000m.tif
+      sha256: 2719bc6dab109062defe0edb245b1d1c2260c41cf1d237b9c1ce0407ddea5f97
+      size_bytes: 5584610
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.53359031677246
+      maximum: 34.67427062988281
+      units: degC
+      input_sha256: 35027ec88dc3cd46ea5ed895b19c969e496237e3d0391fce5571b092e16284c4
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2013_EPSG6933_11000m.tif
+      sha256: 989ef1c394dd80e1a11ab857af1c731efa3ef76904755b89b3f2cbd1e8b957b3
+      size_bytes: 5570310
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.26517677307129
+      maximum: 35.19526672363281
+      units: degC
+      input_sha256: 9c3963568619997c0de99174dacdce03fc6adbc294a1229fcb6cbb46533d7904
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2014_EPSG6933_11000m.tif
+      sha256: d9a1bd742d2dc1fccc0194fda3b030a74b5c0ee38b22c8334ccc5bb9947510f2
+      size_bytes: 5567916
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.686670303344727
+      maximum: 34.51896286010742
+      units: degC
+      input_sha256: 38d6872ce62ff0d6e04ff3d8cb65733a04107b9e2d3952b6d206e4470189ff59
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2015_EPSG6933_11000m.tif
+      sha256: 1850087057a262d13d7fb78d0658a8b0dc33c94279641ea797618cc6892154d7
+      size_bytes: 5577546
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 20.0252742767334
+      maximum: 34.94745635986328
+      units: degC
+      input_sha256: fac72bdfe3f260907d04e145eaf8b9a74abc0749918df820c0c3c8781ec42d71
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2016_EPSG6933_11000m.tif
+      sha256: 419212e5d1f7369b295c6f48e34bda3767225627671e47e7851c3b2a7007d975
+      size_bytes: 5587030
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 17.722183227539062
+      maximum: 35.11793899536133
+      units: degC
+      input_sha256: e67fca525c355241a7d01cbd62c341c1240a66489175aad82ecf5d01531fd621
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2017_EPSG6933_11000m.tif
+      sha256: 80934e8371bb2f39aafd18b917ab182dd99367d5927448b0a579d924eb641b7b
+      size_bytes: 5567812
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 20.021461486816406
+      maximum: 34.980018615722656
+      units: degC
+      input_sha256: bfa0f40358556cc68fcd7dffe31cc1cc4c51272b796a0a42c083dc54d4b9a899
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2018_EPSG6933_11000m.tif
+      sha256: 332b8328ed1efc26e1b2e23067e51120a3fdb94a5bc6f2b718d817e53206ee30
+      size_bytes: 5563122
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.924259185791016
+      maximum: 34.30782699584961
+      units: degC
+      input_sha256: ab37a1dbadd779f903d1ce2c3203a4c9a357726722df0d2c79c9527341f34559
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2019_EPSG6933_11000m.tif
+      sha256: dc2db43c43dacbeaafae315ee67d91428a39fc369f573b40046ea63b2fd94513
+      size_bytes: 5565858
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.93563461303711
+      maximum: 35.84973907470703
+      units: degC
+      input_sha256: c697680edc6082cc5e7c5c92250b5d64f950f0cbc91f29ce362a43186fdff964
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/tmean_2020_EPSG6933_11000m.tif
+      sha256: bf327862c8d00b652886c2d26a28f9f1b00703484003e8233f17f98e06c83464
+      size_bytes: 5582866
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 19.859981536865234
+      maximum: 35.470760345458984
+      units: degC
+      input_sha256: 81dc20db2a4770154a781a3370d00810c0190b199f83796fdbe492bc0b82da90
+  tmin:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2000_EPSG6933_11000m.tif
+      sha256: 87a89e5b54f46537c2417e48e6bc2c7b45ca1d07b0795612d71e4fcf8271b923
+      size_bytes: 5612942
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.551788330078125
+      maximum: 29.623058319091797
+      units: degC
+      input_sha256: 730c3ee63017cb0507ab4e30f75590f93002ec525091d8b969a81fbc936caa78
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2001_EPSG6933_11000m.tif
+      sha256: 853fd173ca6e25bd1ff74eaeaa3b81195aed3eed1eca1bf880e80d0c21263217
+      size_bytes: 5599084
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 11.871289253234863
+      maximum: 29.53839683532715
+      units: degC
+      input_sha256: e07604ba8cf3ce62848f3024152978c8cc0614b58bb7ed315988198883dbacb8
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2002_EPSG6933_11000m.tif
+      sha256: cb0d98fbdec66e4d9051b503eec09095eb3e4a0d189d1987c76a826d94884f6c
+      size_bytes: 5599182
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 11.687063217163086
+      maximum: 29.555526733398438
+      units: degC
+      input_sha256: 25756badc33402c8840ae5f37326abbeac574b10aefae003ca91927773376f7f
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2003_EPSG6933_11000m.tif
+      sha256: b17624ade8926a71e776de3374d23e68fcbc6f172eff36a1ce77fec9f342e1a5
+      size_bytes: 5594110
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 12.655597686767578
+      maximum: 29.269392013549805
+      units: degC
+      input_sha256: 37139b53ed8ee69fe9f10e2510790f63b489ed2b77661429a99dd8e22a96d80b
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2004_EPSG6933_11000m.tif
+      sha256: 5029dfffbb51d64983a4299f4bc7cf651b1579ab1148178394cdb57cb015c4e3
+      size_bytes: 5606774
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.963998794555664
+      maximum: 30.847660064697266
+      units: degC
+      input_sha256: a1537b7c3e2dfe7a61de5f37baaa4aa2eb60de5f899cbd95a7d30e1fd1b8b212
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2005_EPSG6933_11000m.tif
+      sha256: 7ee0af28de4169e7c4c04076756ce3ee0af23f1f944a2f651e54cd1f4567f606
+      size_bytes: 5597368
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.972257614135742
+      maximum: 29.874177932739258
+      units: degC
+      input_sha256: a52bde461802fa828ba3ccec3e96cc6c8970109314d6ea2659f92e0ad9caf3b7
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2006_EPSG6933_11000m.tif
+      sha256: b205843e178f4ea7311147ceaa8be8b93ac607d80b4c93bb3295bf705e61cfbf
+      size_bytes: 5602876
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.018006324768066
+      maximum: 29.90738868713379
+      units: degC
+      input_sha256: 601cde9b6fecb5bab2849d23d1518b31fd995bfccb996594b9129c5cf5decbd8
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2007_EPSG6933_11000m.tif
+      sha256: 0c4bb1fa0919c2d11f8628e26ee895dc63e81473e7d7c69a837473b78ea367f4
+      size_bytes: 5601078
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.50356674194336
+      maximum: 30.151941299438477
+      units: degC
+      input_sha256: f7b5845fae6cee394b6f8ee8a04e1ecdacf2b5640a1153e47f613bc0729c97af
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2008_EPSG6933_11000m.tif
+      sha256: 62d028e3df4c7032a5d384e7e50faaafaa52d73e10af7c3d72ba603e6aacd96a
+      size_bytes: 5619046
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 11.992754936218262
+      maximum: 30.207000732421875
+      units: degC
+      input_sha256: 64a4ebdc463f21db10b75742b3ea3d3e9e5b7b9f6e604034c962291677f0a2d4
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2009_EPSG6933_11000m.tif
+      sha256: 1933e9b15d163c6f98900e883e0b8f0fadcbad1a7f7fb86f69b29c18cb1ec5bc
+      size_bytes: 5600096
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.984360694885254
+      maximum: 29.999074935913086
+      units: degC
+      input_sha256: 5253032029f5bf0b2d36441cdb291751b0ee450968b5f26192af017787fc0e26
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2010_EPSG6933_11000m.tif
+      sha256: e995ba469f8023e4876530fd0114deca815948432eff38e4fef3475643648c49
+      size_bytes: 5600466
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.151360511779785
+      maximum: 30.7872371673584
+      units: degC
+      input_sha256: be44f45f8dcf2e3ee1590e6359c38c97b28179b12d3996a1f6284ae9b26d26f6
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2011_EPSG6933_11000m.tif
+      sha256: 1e85a7167a91e11cfc7ed3e5ab4b2ce4c418e8b597c62c3fb33e8ad816a9c682
+      size_bytes: 5603008
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.106327056884766
+      maximum: 29.85997200012207
+      units: degC
+      input_sha256: da603cb0d7b24effbe9bf32cdf467e92723e6cf796f711b570fc83aa02ab85f5
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2012_EPSG6933_11000m.tif
+      sha256: d309e0ecffa054c865625ee626a2613ebfdb9f5addb6e02ea1cbb5dfd3c80a96
+      size_bytes: 5611290
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 12.449017524719238
+      maximum: 30.672183990478516
+      units: degC
+      input_sha256: 5a294caa533d3c404839f50c860eb9b3e56e506d83e28b2cde5e4a8469665455
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2013_EPSG6933_11000m.tif
+      sha256: e124402ea3dcd549d0e68af6e838a2d1188d1ef79f968a74a84644fda39b1c83
+      size_bytes: 5598246
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 11.857590675354004
+      maximum: 30.313819885253906
+      units: degC
+      input_sha256: 11759b5e17c16cdf5f4b62305239ec0dd6e75dba7642f3753f2819e86be8e3e5
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2014_EPSG6933_11000m.tif
+      sha256: 00acb9a5a2ca90f7c7366940c8fd514ea1398c45a0e1f1ac31ba2ef14dbe5bbc
+      size_bytes: 5594960
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.671690940856934
+      maximum: 29.772594451904297
+      units: degC
+      input_sha256: f29fe36b0bc08cfbb152c75176e5fa45009bc45e04395aaf8ba6a284bbb7e705
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2015_EPSG6933_11000m.tif
+      sha256: 71bf35a927bbc7c11c32fc97579e0108c208b95bd519b2b64fff12a14bc3fd4c
+      size_bytes: 5613098
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 12.577253341674805
+      maximum: 30.417613983154297
+      units: degC
+      input_sha256: 93e8ce52a5ea0a759296dec280c94763b1da4a12cec19fd8a2d6e87612f0156a
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2016_EPSG6933_11000m.tif
+      sha256: f84f99eefb2de40c7be8e742f32514226236f1615985176f85017875c3135646
+      size_bytes: 5622196
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.149859428405762
+      maximum: 30.526309967041016
+      units: degC
+      input_sha256: b6b583aaabe7667daac62b1f71506056af9279015669bbb9c12e5a8e20adc0a0
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2017_EPSG6933_11000m.tif
+      sha256: 70599fa4c0437f5fa125488bc6bf69456b8b734420a62a3accfbe1a3775a5922
+      size_bytes: 5600620
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 14.211197853088379
+      maximum: 30.35025405883789
+      units: degC
+      input_sha256: e94ec197eb86e52dea1dfe46027c8b8d8a0785d580fb2d31a34cb439155b1359
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2018_EPSG6933_11000m.tif
+      sha256: 081061877f8f18c8668c62eb456d68fe3630f989442c36028c4ece883e81f877
+      size_bytes: 5597092
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 11.69779109954834
+      maximum: 29.688838958740234
+      units: degC
+      input_sha256: e0e1ca79728997b606d22e8451d14800be4c9fb4cb347463fdf009cddad1f2bf
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2019_EPSG6933_11000m.tif
+      sha256: 72aea23d97af44c7f1f8d5c48c0ba493da817a23c80dbed46938149fb9b4fe72
+      size_bytes: 5603094
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 13.614855766296387
+      maximum: 31.46583366394043
+      units: degC
+      input_sha256: 19192bf83c2c8cb8ca0a396d3d64481d7403fc42c810f23581f998973eb686e3
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/tmin_2020_EPSG6933_11000m.tif
+      sha256: f30c0494bcc48b7b716c84b8490b8776080671fdd75f0410c0a279835f9b3bed
+      size_bytes: 5620786
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 12.585379600524902
+      maximum: 31.366376876831055
+      units: degC
+      input_sha256: 9c1f12380aeded1087c91f6a6cedc74df70fd995c1c5f4337aa8556bd791d6d3
+  vpd:
+    '2000':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2000_EPSG6933_11000m.tif
+      sha256: 9bd3eeaf88072661513c789ee3762338252520e74eca5b3f95ed009331dd365b
+      size_bytes: 5984786
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.2970176935195923
+      maximum: 7.013186454772949
+      units: kPa
+      input_sha256: 1ba7a61468b473a55f6b089d6724f2cf24c32bd488b0c76e1f88fb5ac6d4e9a9
+    '2001':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2001_EPSG6933_11000m.tif
+      sha256: 71050a6b2cdc9131e0fcdcf4ebb9655b330ab12b47e1b0067af4810e51c24da1
+      size_bytes: 5968666
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.28521522879600525
+      maximum: 7.28492546081543
+      units: kPa
+      input_sha256: 35d50849410ea4f44d9485293ebf43a1cabd844a1544694a1bbcc5db293bfb1e
+    '2002':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2002_EPSG6933_11000m.tif
+      sha256: 9c6b199897c89dc828ef6367be397a82ac1461a2e9b68464ee34b1160d470a1b
+      size_bytes: 5971746
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.31553152203559875
+      maximum: 7.389402389526367
+      units: kPa
+      input_sha256: e5283f95c9a27fa1ab6a33b16185bda434470d51df13c0792caabb04510cb6ca
+    '2003':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2003_EPSG6933_11000m.tif
+      sha256: 379a1b280303d0fe71a3dd482cb3397951d1bf1c67a978528237db561368c2d8
+      size_bytes: 5977364
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.2952280044555664
+      maximum: 7.199901580810547
+      units: kPa
+      input_sha256: 1af79d8d6144cd9ba67aad9989df18d45ebdc9f16bc67944a61bbfc1b02d5284
+    '2004':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2004_EPSG6933_11000m.tif
+      sha256: a709babacad9567609e27259575499a6ea908578a5e5bee6533ea42ed520ee5e
+      size_bytes: 5997814
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.31742262840270996
+      maximum: 7.08935022354126
+      units: kPa
+      input_sha256: bdc017b73a922790cb4d1fdc1db2d273c5cff1c1482bf25642af3cb95688c278
+    '2005':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2005_EPSG6933_11000m.tif
+      sha256: f97a370beae4a7323bfddabad48af7c36b5228d26416ab13bcc8ae7d138f60bc
+      size_bytes: 5980938
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.34685203433036804
+      maximum: 6.8222856521606445
+      units: kPa
+      input_sha256: 3adc32a91d76d3795533a107ced6741f722c6e436d1a352ea6f6d860f41ca649
+    '2006':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2006_EPSG6933_11000m.tif
+      sha256: 85462024ac0ed312b539102bb38146631ae57da00edff30fa9e58a4d88ec54c8
+      size_bytes: 5980874
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3292563259601593
+      maximum: 7.234418869018555
+      units: kPa
+      input_sha256: 4f5f06dff8821bdd315942848db468c30a9bb75ada85f3996498115edd490fbf
+    '2007':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2007_EPSG6933_11000m.tif
+      sha256: 3d791c3926330b9e2fe9e45f7c80adf4a86788e82b7be31b6bc2db81b6b5d854
+      size_bytes: 5975470
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3623289167881012
+      maximum: 7.046037197113037
+      units: kPa
+      input_sha256: b0afd97e458a1628a5e414ef6da0185647271e96a2ee6435f33c0f51d35ec36b
+    '2008':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2008_EPSG6933_11000m.tif
+      sha256: 5b20d14ae6c71d0496c5fbb84146ddf95a3c5085a35386c9e828644bff2fd844
+      size_bytes: 5983424
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3548826277256012
+      maximum: 7.128944396972656
+      units: kPa
+      input_sha256: 36a4328929a11e5d7989f36b17ff6601f692d9c55b81ae832c3f0bfcc0a4643b
+    '2009':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2009_EPSG6933_11000m.tif
+      sha256: 246f6453d9bbaae0bd0724e80c03f4276299f391515af63270815cf91081e26b
+      size_bytes: 5984606
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3028790354728699
+      maximum: 7.00702428817749
+      units: kPa
+      input_sha256: a9b292cb6e3a0a14c3a375cd4ea3d3f4ee70267d59ba97711d05421a7f825264
+    '2010':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2010_EPSG6933_11000m.tif
+      sha256: 1cf29b3b241572a8fe2b087524dd5882d449002210fd7d7ecf3013bb33018c3b
+      size_bytes: 5982900
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.34526583552360535
+      maximum: 7.223140716552734
+      units: kPa
+      input_sha256: bd191554ca9b94d05645d15dc2f70c6d9707f97fc72e3755c0e267bd04afb4c7
+    '2011':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2011_EPSG6933_11000m.tif
+      sha256: 28edd8d6616a704222767555cb79098b7782eea12692576fc93dc960390eafce
+      size_bytes: 5976412
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.2836728096008301
+      maximum: 6.926351070404053
+      units: kPa
+      input_sha256: 4986a146fd9679c5200c19e5de774afafae320d79a13c8dba68c53b417b8b859
+    '2012':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2012_EPSG6933_11000m.tif
+      sha256: f41a49c099c7db0199767db7657308db89f512b69297ab804f201a404252918c
+      size_bytes: 5991268
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.31881046295166016
+      maximum: 7.141302108764648
+      units: kPa
+      input_sha256: 0374f5d5751111b2fa8f6adbf9dbaa1a19c18bb94dfcd83f6a7f141d2b3c4f68
+    '2013':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2013_EPSG6933_11000m.tif
+      sha256: 6be39aff75afa08a4b78c8d1b5e2b45f023738cbf3a733206ddf5f8994f6e1b3
+      size_bytes: 5975934
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.36842331290245056
+      maximum: 7.116390705108643
+      units: kPa
+      input_sha256: 0c7893096c26fed9dd778f95658534a71db3d7530e50d8f37bd3663b16164e1b
+    '2014':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2014_EPSG6933_11000m.tif
+      sha256: 8e708ca2525b794453241d8bf30178e9cb7b487981326f78301972afc5879d28
+      size_bytes: 5980458
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.27035754919052124
+      maximum: 6.834812164306641
+      units: kPa
+      input_sha256: e6bb6f2808c3c9d01bd34f1ce978b9b3b8ad4c7d1b0e416575bfdfcb21c7720f
+    '2015':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2015_EPSG6933_11000m.tif
+      sha256: 657b05550ef32bd0619ac98893accbfc59346a9aafd9d74184cd7d2ea984721d
+      size_bytes: 5975480
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.34031710028648376
+      maximum: 7.070395469665527
+      units: kPa
+      input_sha256: b477eaf6767e3a1f117265a56f42cdbd4e98f1472a31a92fe5a5410c0fa65db5
+    '2016':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2016_EPSG6933_11000m.tif
+      sha256: 4456509d2da452d90ffb00fbc76705c645e50a67ccf09f564ff775d78a022c25
+      size_bytes: 5986162
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.30011263489723206
+      maximum: 7.812209129333496
+      units: kPa
+      input_sha256: eea26fba13e0b342f73fce7729a8878a6baebaebabd9a02605280398d1becc75
+    '2017':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2017_EPSG6933_11000m.tif
+      sha256: 762839a00ceabe9229c2e84ff1dd99f56ab0aeedbf7b30ab5510c739b6711bc8
+      size_bytes: 5971794
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.2611760199069977
+      maximum: 6.954412460327148
+      units: kPa
+      input_sha256: 39564e1948d9b4f6d72a1841d8d94d95a3696348139253dd20efd72e4941d8f8
+    '2018':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2018_EPSG6933_11000m.tif
+      sha256: b9c642a4818cfbf38b0dca3d2290ac4d8a9049010c67b7575921b491ce817138
+      size_bytes: 5972544
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3509506583213806
+      maximum: 7.015506267547607
+      units: kPa
+      input_sha256: f0c295b340ed46a424034c1eb5632498a5cd7ee1611aeda6193728cc1eabbf4e
+    '2019':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2019_EPSG6933_11000m.tif
+      sha256: 7580949cc7cbeac015a4478d59490ec7b31208adc279b84474dbeb7aa9239c59
+      size_bytes: 5970450
+      days: 365
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3159722685813904
+      maximum: 7.208301067352295
+      units: kPa
+      input_sha256: 0614e58f7063f2a9ee6c3ce377dcaf6a13f3bb9ae6259c56d42bd745e539f219
+    '2020':
+      path: 01_inputs/processed/climate_full_extent/daily/vpd_2020_EPSG6933_11000m.tif
+      sha256: a1e5ce3e31f6e4dc1d691db4fdec67ac775eaf78487d69090b7148cc4f979b5b
+      size_bytes: 5984372
+      days: 366
+      valid_country_grid_cells_per_day: 4621
+      minimum: 0.3054811358451843
+      maximum: 7.352051258087158
+      units: kPa
+      input_sha256: d0408cd89dac0adc373c9ecf900a1279bb17172d3868bd8ba1a8a29eecdca49d

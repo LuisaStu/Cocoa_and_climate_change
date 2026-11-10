@@ -1,0 +1,110 @@
+dataset: SoilGrids 2.0 Q0.5
+input_directory: 01_inputs\raw\soilgrids_full_extent
+source_grid:
+  crs: EPSG:4326
+  width: 5751
+  height: 3347
+  bounds_lonlat:
+  - -9.0
+  - 3.9999999999999982
+  - 4.0
+  - 12.0
+grid:
+  crs: EPSG:6933
+  transform:
+  - 11000.0
+  - 0.0
+  - -869000.0
+  - 0.0
+  - -11000.0
+  - 1518000.0
+  width: 115
+  height: 93
+  resolution_m: 11000.0
+metadata_sources:
+  soilgrids_documentation: https://docs.isric.org/globaldata/soilgrids/
+  cfvo_wms_getcapabilities: https://maps.isric.org/mapserv?map=/map/cfvo.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities
+  cfvo_unit: ISRIC WMS describes cfvo as volumetric content in permyriad.
+method:
+  water_content_conversion: SoilGrids integer value * 0.001 = m3/m3
+  coarse_fragment_conversion: SoilGrids cfvo integer value * 0.0001 = volume fraction
+  awc: (wv0033 - wv1500) * layer thickness * (1 - cfvo fraction)
+  root_depths_mm:
+  - 1000
+  - 1500
+  - 2000
+  resampling: rasterio/GDAL average to EPSG:6933 equal-area grid
+  gap_fill: nearest valid country-cell value within two target-grid cells
+  nodata: Zero-valued wv layers and nonphysical layer values treated as missing
+invalid_source_pixels_by_depth:
+  0_5cm: 3564748
+  5_15cm: 3566309
+  15_30cm: 3560963
+  30_60cm: 3652036
+  60_100cm: 3569048
+  100_200cm: 3550350
+country_coverage_by_root_depth_mm:
+  '1000':
+    GHA:
+      grid_cells: 1980
+      valid_before_imputation: 1980
+      imputed_cells: 0
+      valid_after_imputation: 1980
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+    CIV:
+      grid_cells: 2641
+      valid_before_imputation: 2641
+      imputed_cells: 0
+      valid_after_imputation: 2641
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+  '1500':
+    GHA:
+      grid_cells: 1980
+      valid_before_imputation: 1980
+      imputed_cells: 0
+      valid_after_imputation: 1980
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+    CIV:
+      grid_cells: 2641
+      valid_before_imputation: 2641
+      imputed_cells: 0
+      valid_after_imputation: 2641
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+  '2000':
+    GHA:
+      grid_cells: 1980
+      valid_before_imputation: 1980
+      imputed_cells: 0
+      valid_after_imputation: 1980
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+    CIV:
+      grid_cells: 2641
+      valid_before_imputation: 2641
+      imputed_cells: 0
+      valid_after_imputation: 2641
+      unfilled_cells: 0
+      coverage_percent_after_imputation: 100.0
+inputs_sha256:
+  soilgrids_cfvo_0_5cm_Q0p5.tif: 600c84a6ca7410f399cc7dec989aa8362de3c246e7a4420a82c6a3e6e5eeed81
+  soilgrids_cfvo_100_200cm_Q0p5.tif: c0453f91c25af936be54074f9e3b00b8ec631154dd1a1a346b776d7cae54f259
+  soilgrids_cfvo_15_30cm_Q0p5.tif: ddb7c6ca87cbe12ff3f56994ac864429b94933acea164c36975aa8e39ea377f7
+  soilgrids_cfvo_30_60cm_Q0p5.tif: 134e09b6ea243818e1a9468c0a16967e64a03282bff7435d9add6b3fde51a757
+  soilgrids_cfvo_5_15cm_Q0p5.tif: cecc72ee2290f64dad6660b16cb041265be4690064ad4ddc71339e955582c6c9
+  soilgrids_cfvo_60_100cm_Q0p5.tif: b888ef340fc83952c544d1bf1517e253134da6f77535c7ad0f63c73d09cac7ba
+  soilgrids_wv0033_0_5cm_Q0p5.tif: 34fcb3194d324f9a1ca9b0d2b59dd7d96320f43a80e274b2f1e39bd278f5f75c
+  soilgrids_wv0033_100_200cm_Q0p5.tif: 0bd825bb7505e01478093295c018b070467d98b386e2e2c23c9cfd9600ec8caa
+  soilgrids_wv0033_15_30cm_Q0p5.tif: 4964acbaab00015947e5030c0b425e2a6dd26831b342d68e81cec59226191992
+  soilgrids_wv0033_30_60cm_Q0p5.tif: 281ebb3cae94ba3af6eae9406bc32efc2c8b6ad72f81335689de72b556415607
+  soilgrids_wv0033_5_15cm_Q0p5.tif: f7eff3f763a44d9b169299b3d89b6a29dc01b29d142bbf90e9c0d6ebab2ef8a7
+  soilgrids_wv0033_60_100cm_Q0p5.tif: 3f3f8c87f0ee2c285653f630a517f3a18bcc000a4000b577b0daedd73c851060
+  soilgrids_wv1500_0_5cm_Q0p5.tif: a38481c51fea448419c4c2541ef995486835f58e51c1f6c507999c156462c225
+  soilgrids_wv1500_100_200cm_Q0p5.tif: 4b6b9c82516eec3397c82ed4e4a08041fe04acbd3ac5cbb58000b8d6deea1308
+  soilgrids_wv1500_15_30cm_Q0p5.tif: 7496446af800457e7c20a8735da30fcde65e57d4190eaf1c5e4ca9af7df93da9
+  soilgrids_wv1500_30_60cm_Q0p5.tif: c06badec8e60e2a778322c40940c1e8f15ab7a90a2dc22e61d834ed882a65f5d
+  soilgrids_wv1500_5_15cm_Q0p5.tif: 2361c8359986089c4694174259b87713ce75da00b3d5dd9bcbfa69729b4eb085
+  soilgrids_wv1500_60_100cm_Q0p5.tif: 07b4d1358523483fedf59502a44d4315ecce5658334a2fb8cef3d1f583b31792

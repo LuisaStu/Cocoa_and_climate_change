@@ -1,0 +1,30 @@
+{
+  "weights": {
+    "equal_model": {
+      "ACCESS-CM2": 0.125,
+      "BCC-CSM2-MR": 0.125,
+      "CanESM5": 0.125,
+      "CMCC-ESM2": 0.125,
+      "MIROC6": 0.125,
+      "MPI-ESM1-2-HR": 0.125,
+      "NorESM2-MM": 0.125,
+      "TaiESM1": 0.125
+    },
+    "component_group": {
+      "ACCESS-CM2": 0.16666666666666666,
+      "BCC-CSM2-MR": 0.16666666666666666,
+      "CanESM5": 0.16666666666666666,
+      "CMCC-ESM2": 0.05555555555555555,
+      "NorESM2-MM": 0.05555555555555555,
+      "TaiESM1": 0.05555555555555555,
+      "MIROC6": 0.16666666666666666,
+      "MPI-ESM1-2-HR": 0.16666666666666666
+    }
+  },
+  "sha256": {
+    "06_validation\\historical_gcm\\daily_spatial\\spatial_diagnostics.csv": "b17fae0b02704acc73bbe599ab56de7dcf696b90246aa1855beb7b8c017e579a",
+    "config\\gcm_ensemble_proposal.yml": "f648b961a355fabad8e6eead248f1138d639cf7d3a13b6b9f5da3658c306c788",
+    "06_validation\\historical_gcm\\daily_spatial\\ensemble_weight_sensitivity.csv": "6afc268fb8bc7c5cd64ac643dcafce50bcdec941a4e34a7357122f7ede2cdb22",
+    "C:\\Users\\Nutzer\\Downloads\\Cocoa_and_climate\\09_analysis\\compare_gcm_weights.py": "133137692a660e7f2a3a04b33aea164fff0277092a6c524f9ca55b41295cc9c2"
+  }
+}

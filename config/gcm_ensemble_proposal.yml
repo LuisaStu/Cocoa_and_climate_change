@@ -1,0 +1,15 @@
+status: proposed_for_scientific_review
+members_per_model: 1
+primary:
+  method: equal_model
+  models: [ACCESS-CM2, BCC-CSM2-MR, CanESM5, CMCC-ESM2, MIROC6, MPI-ESM1-2-HR, NorESM2-MM, TaiESM1]
+sensitivity:
+  method: equal_group_then_equal_model_within_group
+  groups:
+    - [ACCESS-CM2]
+    - [BCC-CSM2-MR]
+    - [CanESM5]
+    - [CMCC-ESM2, NorESM2-MM, TaiESM1]
+    - [MIROC6]
+    - [MPI-ESM1-2-HR]
+  note: Heuristic recent CAM/CLM component grouping; not estimated statistical independence.

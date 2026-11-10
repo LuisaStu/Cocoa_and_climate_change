@@ -1,0 +1,28 @@
+{
+  "status": "complete_historical_reference_diagnostics",
+  "created_at": "2026-10-06T14:44:07.418234-04:00",
+  "interpretation": "Descriptive historical diagnostics of the uncalibrated reference response; not empirical validation, actual yield, or causal trend attribution.",
+  "input_sha256": {
+    "08_outputs/country/historical_country_summary.csv": "56120ff55eb5fb102844b28b8059a798b002e4ee26a4290b3668ab5126be0ae4",
+    "08_outputs/gridded/historical_climatic_suitability/historical_run_manifest.json": "b8ea82dabf67e35de1d7d1e1e99d9004b0c2ac818d4e1d69c7b6ac130364d849",
+    "03_parameters/flowering/cacao_seasonal_cohort_calendar.yml": "fa14cc85d82d18e32a569710dc6192a8fd23885248b99468f1d79db867b4ebe0",
+    "09_analysis/summarize_historical_suitability.py": "7fa3b0e204ba25f7ccc4bd88236b368cb489fd2cfda68fcb68f9deedc5211482"
+  },
+  "historical_run_status": "complete_historical_cohort_start_analysis",
+  "years": [
+    2000,
+    2019
+  ],
+  "cohort_start_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+  ],
+  "season_aggregation": false,
+  "output": "09_analysis/historical_suitability/baseline_diagnostics.csv",
+  "output_sha256": "a020a41732caa489db0dd023f3139ae75572d662d45b61f6492059d91f0a3a6f",
+  "groups": 12
+}

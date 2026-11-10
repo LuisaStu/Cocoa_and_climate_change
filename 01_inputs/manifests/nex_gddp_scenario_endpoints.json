@@ -1,0 +1,3732 @@
+{
+  "status": "complete_for_requested_batch",
+  "updated_utc": "2026-11-05T15:20:47.919976+00:00",
+  "expected_files": 128,
+  "verified_files": 128,
+  "full_period_expected_files": 1344,
+  "years": [
+    2060,
+    2080
+  ],
+  "bbox_lonlat": [
+    -9.0,
+    4.0,
+    4.0,
+    12.0
+  ],
+  "files": [
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "b12136be8fe2869633603136ff075b2e6071f144b7217ba9fe34af7d72eb6617",
+      "size_bytes": 2567132,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "df52f2783981656b7de7b3a1a98684c06cf0e12615a8f66a974792a49264864a",
+      "size_bytes": 2567132,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "9b6b882f944279ffe6d16667a697d71f0acdebc2079d59cf2b3f94a93aa5c1d7",
+      "size_bytes": 2567212,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "2c158f268b932ab566dd45fda335fbda6a92814cc1fcc3649da59d1061e9885b",
+      "size_bytes": 2567212,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "d8ebdfbe4c092cd789988e581660101bb64d5c4c2c9dba4a3c6b247f207f5342",
+      "size_bytes": 2567448,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "326b0112ce93b0a3ed3b3cf459222dccbdf9021108dff6619700689addbcb0ae",
+      "size_bytes": 2567448,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2e3d9bd26b966d1c9af7ba9e442a09db00f47b100a433bdeda3c3af5d6f5a8e9",
+      "size_bytes": 2566860,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "5de5dd3afe9153d13e496b8fdf1e8b62d22a9e9b6fb89a95ffb536f3bae75f1e",
+      "size_bytes": 2566860,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "e4a5e16b84b5a8f47ecd72713be28a51cbe5ce201c89a2e64e4087ed0d1622c8",
+      "size_bytes": 2567132,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "6a5b476e37a02e98f2527532894b6cd7150068328fd15f0f371ce63ed81eb756",
+      "size_bytes": 2567132,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/pr/pr_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "9d4f01af4ed763cd46920d9bf880be728766e927f4dee8d28cba2d800c85d70a",
+      "size_bytes": 2567212,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "edc0d7a00c676419d60adfa5a58849a865ee5f513174c135445b867845292639",
+      "size_bytes": 2567212,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "a27c13648b86619bf2dfc7670dd5260484907775d61bd99db0a32b9a266604c9",
+      "size_bytes": 2567448,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "55b907c892a3b2bd5a53783a62eb119206a829e0e3ade1ad73c659e80667dc61",
+      "size_bytes": 2567448,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "803c5ea6a0ddd21fbe7acbcb5608a5f4efce9d036a1308a9ae0c93d38a63794c",
+      "size_bytes": 2566860,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/ACCESS-CM2/ssp585/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "a2fb7d918b1bcd6550c9fce787a353aa12c8bdee16dc15472382b15cf8042236",
+      "size_bytes": 2566860,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "8d7f34b39108ea5057b6767373ed083554c98dba5f4c5443d253a0679d81ae6c",
+      "size_bytes": 2560172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "acd354a3c2b00147e5c4cb9d03e3674a50c8aa488d48b2d8848448bbf9c624a3",
+      "size_bytes": 2560172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "cada2127bc4bafcaaed8ecca3eae8f54d4c4f35de90d9f81f664f83e30fb8303",
+      "size_bytes": 2560240,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "9b0cd4e27f2714567fab3a8c20f41d7a90769256b09ae4e4c46c0d3ee04103ea",
+      "size_bytes": 2560240,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "73903ff88c55e883a613011b575e46858eb44cc0883cce31ab9c94646f195b34",
+      "size_bytes": 2560372,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "91ea71dd2cce701ef121cc9bb0a4318724974d053600181ce5fe9252005abf37",
+      "size_bytes": 2560372,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "902286dbee779560d15212dc4af41a9fe2b6c0bd3e5936b43dc9679be48bdce3",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "aa9d185fd140e37f1d8d56c1a0599ae4c7b3accb301e134dd047e37ef77d5bba",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp245/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "28ac11770ad77d9c0f43461ad846f395cae9419a146b4c36f18e6bc74ac737a1",
+      "size_bytes": 2560172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "b8c091674a04b029db3dbc95c81c572f5d22f521d2c0378c099605a66047a328",
+      "size_bytes": 2560172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/pr/pr_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "b4a6c044a2246c27a4163a3c153c362d84ac0e3073e5b8ccef1650d7a60ecabe",
+      "size_bytes": 2560240,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "75fe2b38eb7fb73dec6a29336545019f544ffb1f5e649248554c5a3561be785a",
+      "size_bytes": 2560240,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/rsds/rsds_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "342d0c9eb8e4d920962df47b8382ca0c4377d55e738a0f9dec657f7ff696b16d",
+      "size_bytes": 2560372,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "c43e15cbdc9ff918fe4530400756333c72ae37671de544a98ec9571d73fc06c2",
+      "size_bytes": 2560372,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmax/tasmax_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2040-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "5c3cfea73734af69e20fe2fbd99dc46571572320057cb20a6eda080ce416be20",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 2065-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "0d964d34753490d04a482053283ca44b1d5b93745422e0d3cdff8c4e38ac83bc",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/BCC-CSM2-MR/ssp585/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "86bd87abb83e5eb0cd7644b23ba7ffb1c104296919b2a66e0a9a1ce238f028cf",
+      "size_bytes": 2560140,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "d73009e70aacd5fb70e6062ac38c41e18bfdf0234a6c69a7511ecae13fc5ae7c",
+      "size_bytes": 2560140,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "fe70ffc8a89b347f25a7c2135fae44f31452cdfde347fd42cb6b03cff2697f51",
+      "size_bytes": 2560216,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "1e1bddfc4b2bee645b056b9e4a75cec79bfcdf149a0dd2d87daa2ad40a360a2e",
+      "size_bytes": 2560216,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "39ff4fb14f17bd08a6d5a5f70cf1e9ef74990d79c3372501bdd565024dc27032",
+      "size_bytes": 2560340,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "bc30a340945dd9f6d90b020b9eeb1067d978a5ce6097eb08575576ff892aa0db",
+      "size_bytes": 2560340,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2c4ac771c604cda1761eb6af7b734ff7850cc7dc0a3ac03001873a8fd0e55893",
+      "size_bytes": 2559832,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp245/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "036d729755bb99dd67bed367155864d4dd9418c595c853d77a459c376398742d",
+      "size_bytes": 2559832,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp245/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "c15b01eb64563c5ee80af9357a8f0f653e4b640379d5c363217ac6c7331ba6e4",
+      "size_bytes": 2560140,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "ec9dd85f73d6a48e36d323e6527d3c47f52a32b1a514251312c59cd7e85cd886",
+      "size_bytes": 2560140,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/pr/pr_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2e906eaaa46fc78a9464a7d3ea026966b6c84e3437385470b4eab335b63fd259",
+      "size_bytes": 2560216,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "dffd183a8a482ef150dbf69c96745f412134dbfb0ae74bfbcd736d2d039688aa",
+      "size_bytes": 2560216,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/rsds/rsds_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "e7e9d456000c1e936f132cb0d057dcddd89a1750df06fc7a9831876167ff48d7",
+      "size_bytes": 2560340,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "a7d6184181883225fadaebe1cf6532af5d58f15db74c922ded666fb73085226c",
+      "size_bytes": 2560340,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/tasmax/tasmax_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2b9749c6c51210f17ddfa91e99effc7280bbf85f4bf17599ba456a80224056e5",
+      "size_bytes": 2559832,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CMCC-ESM2/ssp585/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "c1643744eeadc87c7640b204b0b5818697bbd82509057f7ecc86af6cce2d4ac9",
+      "size_bytes": 2559832,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CMCC-ESM2/ssp585/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/pr/pr_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "a0a9637126786fe8ea8344227874cc0bed0db28ba39ca3b7c209809e14cfffe3",
+      "size_bytes": 2560144,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/pr/pr_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/pr/pr_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "a120d5c4baf995906bf2d62d2acb385344d9feff3c4b59b69bb8f7f5d15d28c9",
+      "size_bytes": 2560144,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/pr/pr_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/rsds/rsds_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "d97a7eb86ec3ec940fcd16d45567a212e637a11cfbb1de7f3fe263ffe6454d46",
+      "size_bytes": 2560220,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/rsds/rsds_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/rsds/rsds_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "6e00e824776134201b40b50910656dd045b8e4af27ea10b4afc5e0e4adc88d00",
+      "size_bytes": 2560220,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/rsds/rsds_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "3be239bfdfa8b40cb2732244f4bbc3aa8eb2b3da441156ecea674d1ec4ce0ca6",
+      "size_bytes": 2560544,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "54767c97be5d9523c65c29aeede609bcff3c3bb20f3ca31d931d844772aa728a",
+      "size_bytes": 2560544,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "1062b6a1e5b659c863d39548f443a7ea134a29ad02198c6a41457527c5ce8b1e",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp245/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "868cc0c7269a55587b48ec5b8ea14b6e0ea7c7a18dd31e4b185e789bfa301466",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp245/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/pr/pr_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "444e1c69f90f023b88325445e7c3ae672ac677f748c66f361c1e6597de9981e3",
+      "size_bytes": 2560144,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/pr/pr_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/pr/pr_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "13bbacbf68ec117924665e8ae21ed36ccb6fc23fbce3c39b9231e98257a21075",
+      "size_bytes": 2560144,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/pr/pr_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/rsds/rsds_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "7952a865773d59af22d1d91f21d5c985625d0f46e91921c1a07fa523cc54a5ec",
+      "size_bytes": 2560220,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/rsds/rsds_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/rsds/rsds_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "7bbce346310aaab5d449a42f034d0fc3d2a1493171fc285b738c1425ee0c861c",
+      "size_bytes": 2560220,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/rsds/rsds_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "af68a04e6a172a25840528ff12722cdf1c9a858b99b73cb45d16ed9af1542ab3",
+      "size_bytes": 2560544,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "0b031e120e7c7eaefc539f7fcf2d6f7d72591ed94217c668d4b77704ef2cbcb6",
+      "size_bytes": 2560544,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/tasmax/tasmax_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "4d371295e7c5c6c4142e7f0a6e74440f9fcc141f416dafd134d80081d8b0cb62",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 1850-01-01 0:0:0.0",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/CanESM5/ssp585/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "fa283a47a9c7bffc6bb8d50231b915cf429580772071c80b25192bf80c7bd070",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/CanESM5/ssp585/r1i1p1f1/tasmin/tasmin_day_CanESM5_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/pr/pr_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "633639bccf10f507684d8ee76afb218ff99083c7df672d2df7ff4ecb8a074448",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/pr/pr_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/pr/pr_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "8f5ae799cd17c774800dc4e1f44a2de882daa621c4e4b90fcd6c68b66729132a",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/pr/pr_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/rsds/rsds_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "08336beb4c6fe229f941ad090e7e84e93fdcfc3f3148dfb049156d32b5d082ad",
+      "size_bytes": 2567248,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/rsds/rsds_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/rsds/rsds_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "00d85c0d99f4f48fe6f67cde7cf81c5db361d17de685ae591f7025816a3283a2",
+      "size_bytes": 2567248,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/rsds/rsds_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "a4d518607af3faa6544a443e4bf72c2bec86fd5ed51b6a305ec158d2876c70a0",
+      "size_bytes": 2567500,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "595b97edf7689fa2f63887d5ca75d78facfa19bfb4824eeff4adcc9e28515af3",
+      "size_bytes": 2567500,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "42ed47305cb3d3321b120b5c2c1959007fc6f69de6b9e51186e2107c663da9ea",
+      "size_bytes": 2566828,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp245/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "a719501976993073999aac56e14ecdd113af5dc2b0a977142a991230b2efbaeb",
+      "size_bytes": 2566828,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp245/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/pr/pr_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "a366c12865b98088f7c516ace2ffd5598fe67e2089153eefb7d38839f7d70289",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/pr/pr_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/pr/pr_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "985783658c3316105ced8e11f852e224820e7cb6b8e74d125c5a5d5e03332285",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/pr/pr_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/rsds/rsds_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "af1e72e55fd4823f142a8f3d515a19ca44b2b14fbf0e05a994f649c568f1b458",
+      "size_bytes": 2567248,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/rsds/rsds_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/rsds/rsds_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "3551cb02be4f63737a6c5c3bf85bf418d1d25cde40af8f1ce9ae0f63e76bd356",
+      "size_bytes": 2567248,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/rsds/rsds_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "49644dd4d2276c020bf1d606d8806157e02d2e93367f614756460181926b5011",
+      "size_bytes": 2567500,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "74cd4c14067d3bd74800be0c099069395c4c40b5895d553f9adcd1a8116e27f7",
+      "size_bytes": 2567500,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/tasmax/tasmax_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "f15dfef58ab06f58f73eb439354aa02590ae04d9b90044a57d2719f008ff6f75",
+      "size_bytes": 2566828,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "standard",
+      "time_units": "days since 1850-1-1",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MIROC6/ssp585/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "ab6e6f9732df491fabd0c53a688dda10d26a05829900a2d2b790495d0ac5176a",
+      "size_bytes": 2566828,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MIROC6/ssp585/r1i1p1f1/tasmin/tasmin_day_MIROC6_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "87e79aec4cc5816d091ca43701d5b3f2b6bf3677f8ee5d33152183725027f7a4",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "0e99270855268c6c110c6aa8cff8f7d04bc7fc2c4d7dabced64f1fc2ef518001",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "e63b0b1340d4baaa7a1b27919c18ffd86a9f4195974b3c2c2343304669884f57",
+      "size_bytes": 2567252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "ca49a6aaa9c524fa1d12f37903991356d8e511b3edf22f6a90f767317dc1c834",
+      "size_bytes": 2567252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "cad788adbcd4fd2823b5e8aea003d03f3bdf07f5f1980cb2b43f9673fabaf102",
+      "size_bytes": 2567580,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "f09ea71120c67f098af52deb4860a1eb2156587ff2d4ea5316c91fb04cb18481",
+      "size_bytes": 2567580,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "7ac5b75168d2745bb59bf5466c6741f28a5ff7880dfc606c34de4e189a3f5777",
+      "size_bytes": 2566868,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "29393730ce5ad49d849f88f9d8b28fd1209820619effd5cf28ae6b123e21c46a",
+      "size_bytes": 2566868,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "135c60adeae0d4ecb042b10c868ef0da784c87687cfb91e0698004840f4c9ccf",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "beef7ff35e7f9bef02e130908b5bbd86efcc6ae2b3770fffc7a2d3b0d1591331",
+      "size_bytes": 2567172,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "1f7e35a60cd3a832753bc34b0c45c3fd310ff8e271d6fc5809d3737e6871240a",
+      "size_bytes": 2567252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "bf6445813eeef7c1a7cb5cbffd33ff4d48a7be999ee81a885a4692076469bd0a",
+      "size_bytes": 2567252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "df50b3c6aafccff4af7fc4c14b8cd8f93af7c4ff2b168fb3b3f16be1aaeb46b8",
+      "size_bytes": 2567580,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "375de77b3bd3d462e04dc0285836520664b7f1d52dc5066dd38c7ef0e240caba",
+      "size_bytes": 2567580,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "c7f6f0786f0db8ee79a89424a936df559a399ce15bbf6623f00ab448c973cb8e",
+      "size_bytes": 2566868,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 366,
+      "calendar": "proleptic_gregorian",
+      "time_units": "days since 1850-1-1 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "7ab4dc1efcbc914dff29a06732f0dd544e9518836ee831d15644837999d835db",
+      "size_bytes": 2566868,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "d2ee60a65eeeff0cefc3bb868a6a8364d39151e91b343f5ff17ae4a8f545fb18",
+      "size_bytes": 2560152,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "7ce11e641e52ebc4e0e25279916eaaefaddaaabe3c8207e2554b17a11068e7a9",
+      "size_bytes": 2560148,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "12959cc8a28be10fea3850d482107522e98e95b9a8012673857a98ca86c19f96",
+      "size_bytes": 2560260,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "2f4af602fd3f50cc5e3baf4777122a0918c6b3bc2da3994f9689be49cc2b544d",
+      "size_bytes": 2560260,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "93f26c948ad6861b151fa9e08cb96db0282e11f42349e960c733d00587fe148a",
+      "size_bytes": 2560420,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "d0c839612fffd3339348bec61e26ddf990b6ba978ed1d6e9b016d96f474fa2a1",
+      "size_bytes": 2560420,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2f024465fc7f4c58d08d1ccd1af3b31214266c6c0b22ce72c9a5f9e10a159417",
+      "size_bytes": 2559844,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp245/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "7a0d3edee630db40a7074bf98d1d4860bbb97070a025df58567501efd6198c8e",
+      "size_bytes": 2559844,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp245/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "8e340bfc9534b17210839e7606847788e583d083552b673b6e896355e6b29a18",
+      "size_bytes": 2560152,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "dc5e2e6e1af75ef94d07a80e208bb560272d6921dd06d27d7e9ea82fe1d2dfdd",
+      "size_bytes": 2560152,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/pr/pr_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "c9c12ee2a94b772da11764d8beba1f88ce0c90c3816f0e72d234bb08d85e5e09",
+      "size_bytes": 2560260,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "645f76c853e2d48863506dd434f52ff30b99bf66ac931283b1910b5845e05c8d",
+      "size_bytes": 2560260,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/rsds/rsds_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "f63a0623746fe3887c26463c739d23c58912a0bb97a1a7f5fdd18512139661b4",
+      "size_bytes": 2560420,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "f15c150e1660fda2ed4d62c03a93ab8a15692e8df71593dfe1df3547fdb49f62",
+      "size_bytes": 2560420,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/tasmax/tasmax_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "c57fc125f1bdd41829cf6f106682c9d5f1f2bcafa8237c90443a991c14a20d2e",
+      "size_bytes": 2559844,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/NorESM2-MM/ssp585/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "4e33c19f146d3a0b9689894691021fda481d00e13c3dc8e07b8413c906b3ee6d",
+      "size_bytes": 2559844,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/NorESM2-MM/ssp585/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/pr/pr_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "9c156d7e2a6a49b49688df540eae7089223b6c77cd672426cbaedffcc9466219",
+      "size_bytes": 2560148,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/pr/pr_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/pr/pr_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "5c48a871d990542eedc0fd4eb482879c8f4e70ba39aa0a9ac331c2a97a5c3a11",
+      "size_bytes": 2560148,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/pr/pr_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "91de071785ee3e01e018530c3b636bfb4405374b76c78c8b73e58b30f6872dec",
+      "size_bytes": 2560252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "8fd748841ceb1cfa98b20bb984ebc2529751031edf4fbab29abf828436cae50f",
+      "size_bytes": 2560252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "5b1af0549cb8692f20d4ccfa504aa3df61af87cfbbad0e40d6e29254355d0f53",
+      "size_bytes": 2560416,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "c27c941740fe9b5f8c2a5c94ac75f29313711d201030f8aca20460d89e439f69",
+      "size_bytes": 2560416,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "e7cc6ab74f0cf17ca4826a5dae2370953b8ac998888553957e3bac8bb83f7361",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp245_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp245/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "aa9bdb203ee5afed620c2ff2223d4b45d3c02953397874f78f1bef6aa5809b00",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp245/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp245_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2060,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/pr/pr_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "379cb793e4624cea3a24389fd2d7b235a253bb71fb9e7a767fed833febe54842",
+      "size_bytes": 2560148,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/pr/pr_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "pr",
+      "year": 2080,
+      "units": "kg m-2 s-1",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/pr/pr_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "edc760110e612da2e1587695bdc71067fbfe3069535310ed89ce92b8b5b995f8",
+      "size_bytes": 2560148,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/pr/pr_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=pr&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2060,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "4ea84d19eec8740e2eda4e5b90b5c7440119fbb1f99cfc718a78a33436b59845",
+      "size_bytes": 2560252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "rsds",
+      "year": 2080,
+      "units": "W m-2",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "660a21b96042f745af9a67d0653a4a969a6e46e510674cd7f1cc41242d0f9539",
+      "size_bytes": 2560252,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/rsds/rsds_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=rsds&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "2f5b948b79f180cdcbfec0a54cb5c2868899be1a091777f2d31f037f509d3b85",
+      "size_bytes": 2560416,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmax",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "58ed5b60eb645b2454f89b05a33f8b522d1c22c7d97ce2ca17b2f11965404b50",
+      "size_bytes": 2560416,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/tasmax/tasmax_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmax&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2060,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc",
+      "sha256": "f2d8dd060a2e00a334fb0e56d722f21a9a9aa2835155683bb686a25703be691d",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp585_r1i1p1f1_gn_2060_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2060-01-01T12%3A00%3A00Z&time_end=2060-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "member": "r1i1p1f1",
+      "variable": "tasmin",
+      "year": 2080,
+      "units": "K",
+      "days": 365,
+      "calendar": "365_day",
+      "time_units": "days since 0001-01-01 00:00:00",
+      "latitude_count": 33,
+      "longitude_count": 53,
+      "latitude_bounds": [
+        4.125,
+        12.125
+      ],
+      "longitude_bounds": [
+        -9.0,
+        4.0
+      ],
+      "longitude_convention": "0-360 normalized to -180-180 for bounds validation",
+      "path": "01_inputs/raw/nex_gddp_cmip6_scenarios/TaiESM1/ssp585/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc",
+      "sha256": "3fef9b25e31506588212f9ed602cb552507b3a013a7a81d7ea860f113cb6a120",
+      "size_bytes": 2559840,
+      "source_url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/TaiESM1/ssp585/r1i1p1f1/tasmin/tasmin_day_TaiESM1_ssp585_r1i1p1f1_gn_2080_v2.0.nc?var=tasmin&north=12.0&west=-9.0&east=4.0&south=4.0&horizStride=1&time_start=2080-01-01T12%3A00%3A00Z&time_end=2080-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+      "version": "2.0",
+      "cmip6_license": "CC-BY-SA 4.0",
+      "resumed": true
+    }
+  ],
+  "errors": []
+}

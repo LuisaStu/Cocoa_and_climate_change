@@ -1,0 +1,39 @@
+[project]
+name = "simple-cacao-wa"
+version = "0.0.0"
+description = "Reproducible cocoa climate-suitability modeling for Ghana and Cote d'Ivoire"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "pyyaml",
+  "h5py",
+  "h5netcdf",
+  "matplotlib",
+  "rasterio",
+  "xarray",
+  "cdsapi",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["04_model/tests"]
+addopts = "-q -p no:cacheprovider"
+
+[tool.setuptools.packages.find]
+where = ["04_model"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+  ".git",
+  ".pytest_cache",
+  ".qa_*",
+  "__pycache__",
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_ignores = true
+warn_return_any = true

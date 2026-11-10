@@ -1,0 +1,35 @@
+name: simple-cacao-wa
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+
+  # Notebook workflow
+  - jupyterlab
+  - ipykernel
+
+  # Scientific Python core
+  - numpy
+  - pandas
+  - scipy
+  - xarray
+  - netcdf4
+  - h5py
+  - h5netcdf
+  - rasterio
+  - dask
+  - cdsapi
+
+  # Configuration and validation
+  - pyyaml
+
+  # Testing and code quality
+  - pytest
+  - pytest-cov
+  - ruff
+  - mypy
+
+  # Reporting
+  - matplotlib
+  - nbconvert

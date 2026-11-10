@@ -1,0 +1,53 @@
+schema_version: 1
+status: regional_literature_proxy_not_locally_validated
+purpose: >
+  Define two separate flowering-season sensitivity cases for a climatic-
+  suitability response analysis. This is not an annual production calendar.
+scope:
+  countries: [GHA, CIV]
+  interpretation: >
+    West African seasonal timing is used as a regional proxy in both countries.
+    Ghanaian evidence supports rainy-season flowering, but country-specific
+    month-level flowering onset has not been validated in both countries.
+source:
+  citation: >
+    Claus, G., Vanhove, W., Van Damme, P., and Smagghe, G. (2018).
+    Challenges in Cocoa Pollination: The Case of Cote d'Ivoire.
+  doi: 10.5772/intechopen.75361
+  evidence: >
+    The chapter describes intense flowering during the major rainy season,
+    starting in April and peaking in June, and lower flowering intensity in
+    the minor rainy season from September through November. It reports few
+    flowers during the December-March dry season.
+ghana_cross_check:
+  citation: >
+    Adjaloo, M. K., Oduro, W., and Banful, B. K. (2012). Floral Phenology of
+    Upper Amazon Cocoa Trees: Implications for Reproduction and Productivity
+    of Cocoa.
+  doi: 10.5402/2012/461674
+  evidence: >
+    Kubease, Ashanti Region observations report rainy-season flowering and
+    increased new pod/cherelle production in June-August. The latter is not
+    substituted for flowering dates.
+calendar:
+  cohort_start_interpretation: each listed month is a separate flowering-date case
+  start_day_of_month: 1
+  start_day_note: >
+    First day of each month is a deterministic date convention for monthly
+    sensitivity cases; the source evidence defines months/seasons, not a
+    particular day within each month.
+  monthly_weights: null
+  annual_production_aggregation: false
+  report: monthly_start_date_responses_separately
+  seasons:
+    - id: major_rainy
+      months: [4, 5, 6]
+      relative_flowering_intensity: high
+    - id: minor_rainy
+      months: [9, 10, 11]
+      relative_flowering_intensity: lower
+limitations:
+  - These seasonal windows are regional literature proxies, not validated country-specific dates.
+  - Flowering intensity is not available as an evidence-based monthly weighting function.
+  - Do not combine the seasonal cases into an annual or farm-yield estimate.
+  - Normalize each monthly start-date response to its own cellwise historical reference.

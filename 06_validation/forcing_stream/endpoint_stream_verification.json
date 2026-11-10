@@ -1,0 +1,331 @@
+{
+  "completed_utc": "2026-11-05T15:26:28.276077+00:00",
+  "combinations": 32,
+  "rows": [
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "32ba7bb53f17231dd9cea2223fc5cfcda9fdea2217a8b7117145e63fd1549af8"
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "273e1d65816c8756ad5696deb15be427a1977f4cea2ab4c16901f6708657d2fe"
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "f12239d3f535292e7dd6efcbe024dff25ad626e279e36b0f4dcec02e3a0f823f"
+    },
+    {
+      "model": "ACCESS-CM2",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "1de2f9a3f34ca72e94cfdfc37ffb0e6a8b8395cddeb15dda77b41234128b394d"
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "2df0ea22df377b19f648e4622426350b8fab3e1e1e521bee00e1b51fefd6482c"
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "90e0d89f31f910289d28e0e82e42b1d212c27c2d750ac266ea91bf5d06be9f03"
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "f094c8d12bb583050adbf8fd595763aaa669c6f5bef4c63d6585787ee42b8323"
+    },
+    {
+      "model": "BCC-CSM2-MR",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "f49195d42740c5dd5ce3d127294a90e803b58c1e1e68de310f92119243de904b"
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "6dbc689d77827d38588125440857a328d58b52d7f2f37c6e56620e23c7a52a29"
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "ad357aa892ed9b7eb1ffe5799b6c5dfd08d8b08c78a2211eae1828f6bdf527e1"
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "ae5562b1f63e24f08810aecd77a5f6fbe38da422843673d703a675a112f6b93e"
+    },
+    {
+      "model": "CanESM5",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "13e1a4669cfe3bcbb694db776423e4b3678ff15298d8854a4108d8ef40a923be"
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "1742d2e6436c695c8a46df7c0c91be736d8d171332bc40ab23fdd0214ca78287"
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "7a297c4c9f2c9da2827c4c2d45da82bb3fef7fbf2004fbfe538ec7c369447014"
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "157a5fd3616547c0925c3f0e9ae6d19bf18f2bbaf0caf0b9c768371aa3c30ed7"
+    },
+    {
+      "model": "CMCC-ESM2",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "74ffe69f0de82719bb815e9dd9f059a7a0f52c9a767b203664ca251eba29ca4b"
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "standard",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "8186c159c0dec595a83522a42cbd668699ed85b60b09168d16a5ca0762970686"
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "standard",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "a7dfa9949ea331689f06a437d510be61e60c52bcf5c58fd0cbf4ada8da142ce4"
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "standard",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "464f65b858e3e1e19697b75f8f9501240be7f5f652dbb2a204ad02f79a2101bf"
+    },
+    {
+      "model": "MIROC6",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "standard",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "5f740fcde47d243b06a9f43d841e061210989eec8f2f242fec5c2704b7ca1e68"
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "8bca4e8a39964c7d07a817d9d19e3b97be4cd02ca27a1bc847e2766b13331d5a"
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "39ed20d215e4bba63ef013bc550cee6f2752a05c39a0964f6ba33567fbdc0826"
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "2f417d252763a92e2d336eaf798e812dc06db6d08d8c53f9f0c1f0aa4f0324ef"
+    },
+    {
+      "model": "MPI-ESM1-2-HR",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "proleptic_gregorian",
+      "days": 366,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "4b9c8992c0a2fc0690fcd5d5ea4b8f29c8fc517e3457abac834a4be944de22ac"
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "db89c2b4f5d1bb8af886f724d167d7f49d9bb73839af45fe47c41868afd65fc7"
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "e0bdaa5bde7c516d97d5cb7878141340c7ef08693ccacbfa29191a496e8e6b0a"
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "17ef04ef29d3f5c97804baba849d66bf27a12197ce91a8187763cedaf620050f"
+    },
+    {
+      "model": "NorESM2-MM",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "aa8dd522ca2079f2534651cc90748eaa1ed1723c205765e6930f8692fb47e04c"
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "ac41ab3a64e4ea95a0cc60e3e5b264d9e8f396b54af70753d09be9ab6b5d28e1"
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp245",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "9c31534ba6966168a746c34f3ed285e7fbf0d961e7af2bdee8f828a9375984c7"
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "year": 2060,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "00f884ec3650cce343ac1520f13266d72fc2c5f82174c40c6ee790bfdb2c4a9f"
+    },
+    {
+      "model": "TaiESM1",
+      "scenario": "ssp585",
+      "year": 2080,
+      "calendar": "365_day",
+      "days": 365,
+      "cells": 4621,
+      "maximum_returned_weather_bytes": 2292016,
+      "stream_sha256": "558af326a7c7b61c31759760dbf9eae54a9a57f58ce365e544e632efcb83fbea"
+    }
+  ],
+  "derived_daily_files_written": 0,
+  "code_sha256": {
+    "weather_stream.py": "d9685609c6d0816e6b3bb8ddad360e80e2869e3f104ee60448d80b41f0d0a925",
+    "verify_weather_stream.py": "8d9c6d1e39a9e97f62c717048040e56affdef75ef252bb062a3beec915d4656d"
+  }
+}

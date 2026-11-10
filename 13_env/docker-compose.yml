@@ -1,0 +1,7 @@
+services:
+  simple-cacao-wa:
+    build:
+      context: ..
+      dockerfile: 13_env/Dockerfile
+    working_dir: /workspace
+    command: ["mamba", "run", "-n", "simple-cacao-wa", "python", "-m", "pytest"]

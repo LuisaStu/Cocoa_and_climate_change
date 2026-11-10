@@ -1,0 +1,55 @@
+grid:
+  crs: EPSG:6933
+  resolution_m: 11000
+  alignment: Pixel boundaries snapped outward to multiples of resolution from projected
+    origin (0, 0).
+  source_bounds_lonlat:
+  - -8.95
+  - 3.95
+  - 4.05
+  - 11.95
+  projected_bounds_m:
+  - -863552.208
+  - 503526.082
+  - 390769.435
+  - 1513761.811
+  transform:
+  - 11000.0
+  - 0.0
+  - -869000.0
+  - 0.0
+  - -11000.0
+  - 1518000.0
+  width: 115
+  height: 93
+  pixel_area_m2: 121000000
+  nodata: 255
+  country_code_mapping:
+    '0': Outside Ghana and Cote d'Ivoire
+    '1': Ghana
+    '2': Cote d'Ivoire
+    '3': Ambiguous overlapping shared-boundary center
+    '255': NoData
+  cell_country_assignment: Rasterized national polygons with pixel-center rule; centers
+    rasterized into both boundaries are coded ambiguous (3).
+  country_grid_cells:
+    GHA: 1980
+    CIV: 2641
+  country_boundary_area_coverage_percent:
+    GHA: 100.0
+    CIV: 100.0
+  ambiguous_shared_boundary_cells: 1
+  country_boundary_ids:
+    GHA:
+      boundary_id: GHA-ADM0-71095829
+      sha256: 6913844e68f4a679b8854bd2ce6fb71c51647d1511abf5306a2426a61a7d240c
+    CIV:
+      boundary_id: CIV-ADM0-2848817
+      sha256: 676d4839888cf2a12896d48f7c0af1a793486995dcd074a19bd1ef4d177f8afe
+output:
+  path: 01_inputs/processed/grid_full_extent/model_grid_EPSG6933_11000m.tif
+  sha256: 6b908bdbc9b7a61b400d29d88cbc3143ffafeaf1ec9be2e0cba0b7fff9ea3d96
+  size_bytes: 2356
+scope_note: The grid covers only the acquired AgERA5 geographic bounds shown above.
+  The expanded bounds cover both Ghana and Cote d'Ivoire. No climate/soil raster
+  reprojection or cocoa masking was performed.

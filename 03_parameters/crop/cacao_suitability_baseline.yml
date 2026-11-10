@@ -1,0 +1,67 @@
+schema_version: 1
+name: published_cacao_no_fit_reference
+status: reference_configuration
+interpretation:
+  target: continuous_climatic_suitability_proxy
+  actual_yield_prediction: false
+  locally_calibrated: false
+  primary_comparison: relative_change_from_cellwise_2000_2019_cohort_reference
+  index_scale: 100
+  water_stress_in_reference: disabled
+  caveat: >
+    The model's internal kg/ha-equivalent output is a mechanistic response
+    quantity, not observed, validated, or predictive farm yield. S_water=0
+    means the reference does not penalize yield response for water deficit.
+crop:
+  source_function: simple_cacao.parameters.published_cacao_parameters
+  source_note: >
+    Published cacao anchors as replicated in this project; Tsum and RUE use
+    the Santander regional anchor. No Ghana- or Cote d'Ivoire-specific fitting.
+  parameters:
+    tsum_c_days: 2016.0
+    hi_fraction: 0.30
+    i50a_c_days: 680.0
+    i50b_c_days: 680.0
+    tbase_c: 10.0
+    topt_c: 26.0
+    rue_g_mj: 0.6
+    i50max_h_c_days_per_day: 0.0
+    i50max_w_c_days_per_day: 0.0
+    t_heat_c: 35.0
+    t_extreme_c: 40.0
+    sco2_per_ppm: 0.0
+    swater: 0.0
+    fsolar_max: 0.85
+    initial_fsolar: 0.01
+    max_cycle_days: 260
+soil:
+  awc_raster: 01_inputs/processed/soil_full_extent/soil_awc_EPSG6933_11000m.tif
+  awc_note: >
+    Verified three-band SoilGrids AWC raster. Bands are indexed from 1 and
+    descriptions are awc_root_depth_1000mm, awc_root_depth_1500mm, and
+    awc_root_depth_2000mm; values are millimetres.
+  rooting_depth_mm: 1500.0
+  awc_band_by_root_depth_mm:
+    1000: 1
+    1500: 2
+    2000: 3
+  awc_raster_units: mm
+  runoff_curve_number: 70.0
+  deep_drainage_coefficient: 0.5
+  parameter_status: provisional_project_defaults_not_cocoa_calibrated
+forcing:
+  historical_reference: AgERA5
+  historical_forcing_years_inclusive: [2000, 2020]
+  reference_et_variable: ReferenceET_PenmanMonteith_FAO56
+  atmospheric_co2_ppm: 400.0
+  co2_note: >
+    CO2-neutral model response; the fixed concentration is recorded for
+    reproducibility and has no effect while sco2_per_ppm is zero.
+scenarios:
+  historical_cohort_start_years_inclusive: [2000, 2019]
+  future_cohort_start_years_inclusive: [2060, 2079]
+  future_forcing_years_inclusive: [2060, 2080]
+  ssp245: true
+  ssp585: true
+  relative_index_formula: "100 * period_response / cell_mean_reference_response"
+  invalid_reference_denominator: raise_and_report; do_not_silently_fill

@@ -1,0 +1,607 @@
+{
+  "pairs_checked": 120,
+  "inversions": 0,
+  "mask_disagreements": 0,
+  "files": [
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/BCC-CSM2-MR/historical/r1i1p1f1/tasmin/tasmin_day_BCC-CSM2-MR_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CanESM5/historical/r1i1p1f1/tasmin/tasmin_day_CanESM5_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/CMCC-ESM2/historical/r1i1p1f1/tasmin/tasmin_day_CMCC-ESM2_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MIROC6/historical/r1i1p1f1/tasmin/tasmin_day_MIROC6_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/NorESM2-MM/historical/r1i1p1f1/tasmin/tasmin_day_NorESM2-MM_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2000_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2001_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2002_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2003_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2004_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2005_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2006_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2007_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2008_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2009_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2010_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2011_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2012_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2013_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    },
+    {
+      "path": "01_inputs/raw/nex_gddp_cmip6_historical_subset/TaiESM1/historical/r1i1p1f1/tasmin/tasmin_day_TaiESM1_historical_r1i1p1f1_gn_2014_v2.0.nc",
+      "inversions": 0,
+      "mask_disagreements": 0
+    }
+  ]
+}

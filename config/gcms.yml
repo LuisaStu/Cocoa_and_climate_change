@@ -1,0 +1,126 @@
+dataset:
+  name: NASA NEX-GDDP-CMIP6
+  archive_version: v2.0
+  bucket: nex-gddp-cmip6
+  region: us-west-2
+  license: mixed_file_specific_CC-BY-4.0_and_CC-BY-SA-4.0
+  license_urls:
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://creativecommons.org/licenses/by-sa/4.0/
+  license_basis: Downloaded files' cmip6_license attribute; archive listing is not a substitute for file-specific terms.
+  registry_url: https://registry.opendata.aws/nex-gddp-cmip6/
+  nasa_documentation_url: https://www.nccs.nasa.gov/data-collections/nex-gddp-cmip6/
+  technical_documentation_doi: https://doi.org/10.7917/OFSG3345
+  citation_access_date: "2026-09-28"
+  native_resolution_degrees: 0.25
+  temporal_resolution: daily
+
+study:
+  historical_comparison_years: [2000, 2014]
+  scenarios:
+    - ssp245
+    - ssp585
+  future_years: [2060, 2080]
+  required_variables:
+    - pr
+    - tasmin
+    - tasmax
+    - rsds
+  additional_variable:
+    name: tas
+    use: Cross-check daily mean temperature against (tasmin + tasmax) / 2
+
+selection:
+  status: historical_diagnostics_and_lineage_review_complete_ensemble_proposed
+  daily_spatial_report: README.md#doc-12-docs-gcm-daily-spatial-screening-md
+  lineage_report: README.md#doc-12-docs-gcm-lineage-review-md
+  ensemble_proposal:
+    status: proposed_for_scientific_review
+    primary: Retain all eight candidates with one member each and equal model weights.
+    sensitivity: Six equal component groups; CMCC-ESM2, NorESM2-MM and TaiESM1 share one group.
+  historical_screening_report: README.md#doc-12-docs-historical-gcm-screening-md
+  historical_screening_outputs: 06_validation/historical_gcm
+  co2_primary_design: "neutral; SIMPLE S_CO2 coefficient = 0"
+  final_selection_requires:
+    - complete daily historical data for every required variable from 2000 through 2014
+    - historical AgERA5 comparison for 2000-2014, with bias and distribution diagnostics
+    - evaluation of distinct model lineages to reduce over-weighting related GCMs
+    - verify the approved CO2-neutral primary configuration is used in scenario runs
+  historical_screening_acquisition:
+    period: [2000, 2014]
+    method: Spatial subset using NASA NCCS THREDDS NetCDF Subset Service
+    bbox_lonlat: [-9.0, 4.0, 4.0, 12.0]
+    output_directory: 01_inputs/raw/nex_gddp_cmip6_historical_subset
+    manifest: 01_inputs/manifests/nex_gddp_historical_subset_manifest.yml
+    downloader: 02_preprocessing/climate/download_nex_gddp_historical.py
+    state: complete_480_files_verified
+    calendar_policy: Preserve each NetCDF CF calendar; align explicitly during skill diagnostics.
+  sample_availability_probe:
+    method: HTTP HEAD against public S3 objects, without downloading data
+    verified_years:
+      historical: [2000, 2014]
+      ssp245: [2021, 2080]
+      ssp585: [2021, 2080]
+    result: All 192 probed model-scenario-variable-year objects returned HTTP 200.
+  weighting:
+    default: equal weight per selected GCM
+    note: Do not weight multiple ensemble members from one GCM as independent models.
+  future_acquisition:
+    state: late_century_period_complete_and_audited
+    full_audit: 06_validation/historical_gcm/scenario_full_audit.json
+    verified_files: 1344
+    completion_date: "2026-09-29"
+    full_manifest: 01_inputs/manifests/nex_gddp_scenario_full.json
+    workflow: workflow/acquire_scenarios.py
+    endpoint_audit: 06_validation/historical_gcm/scenario_endpoint_audit.json
+    working_ensemble: config/gcm_ensemble_proposal.yml
+    downloader: 02_preprocessing/climate/download_nex_scenarios.py
+    endpoint_manifest: 01_inputs/manifests/nex_gddp_scenario_endpoints.json
+    endpoint_years: [2060, 2080]
+    full_period_expected_files: 1344
+    timing: Bounded endpoint acquisition follows completed historical diagnostics and component review; full acquisition follows endpoint audit.
+    availability_check: Representative model/scenario/variable/year objects were verified by HTTP HEAD.
+
+candidate_models:
+  - id: ACCESS-CM2
+    institution: CSIRO and Bureau of Meteorology
+    country: Australia
+    member: r1i1p1f1
+    lineage_note: ACCESS model family; select one ACCESS member/model in the final ensemble.
+  - id: BCC-CSM2-MR
+    institution: Beijing Climate Center, China Meteorological Administration
+    country: China
+    member: r1i1p1f1
+  - id: CanESM5
+    institution: Canadian Centre for Climate Modelling and Analysis
+    country: Canada
+    member: r1i1p1f1
+  - id: CMCC-ESM2
+    institution: Euro-Mediterranean Center on Climate Change
+    country: Italy
+    member: r1i1p1f1
+  - id: MIROC6
+    institution: MIROC consortium
+    country: Japan
+    member: r1i1p1f1
+  - id: MPI-ESM1-2-HR
+    institution: Max Planck Institute for Meteorology
+    country: Germany
+    member: r1i1p1f1
+    lineage_note: MPI-ESM family; select one MPI member/model in the final ensemble.
+  - id: NorESM2-MM
+    institution: Norwegian Climate Centre
+    country: Norway
+    member: r1i1p1f1
+    lineage_note: NorESM2 family; select one NorESM2 resolution in the final ensemble.
+  - id: TaiESM1
+    institution: Research Center for Environmental Changes, Academia Sinica
+    country: Taiwan
+    member: r1i1p1f1
+
+object_key_template: "NEX-GDDP-CMIP6/{model}/{scenario}/{member}/{variable}/{variable}_day_{model}_{scenario}_{member}_gn_{year}_v2.0.nc"
+warning:
+  - NEX-GDDP-CMIP6 is already statistically downscaled and bias-adjusted; do not describe it as raw GCM output or blindly apply a second bias correction.
+  - The effective future-climate information scale remains approximately 0.25 degrees, even if later regridded to the 11 km model grid.
+  - Confirm each downloaded NetCDF's units and calendar from file metadata before conversion; do not infer units from variable names.
+  - This list is an availability-screened candidate pool, not a finalized or skill-ranked ensemble.

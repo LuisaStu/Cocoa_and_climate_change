@@ -1,0 +1,89 @@
+dataset:
+  name: CHIRPS v3
+  provider: Climate Hazards Center, University of California Santa Barbara
+  landing_page: https://www.chc.ucsb.edu/data/chirps3
+  product_readme: https://data.chc.ucsb.edu/products/CHIRPS/v3.0/README-CHIRPSv3.0.txt
+  product: final monthly Africa GeoTIFF
+  access: public
+  raw_downloads_saved: false
+  source_url_pattern: "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/monthly/africa/tifs/chirps-v3.0.{year}.{month:02d}.tif"
+  source_resolution_degrees: 0.05
+  source_units: mm/month
+
+comparison:
+  primary_dataset: expanded AgERA5 precipitation
+  period: "2000-2020"
+  expanded_agera5_directory: 01_inputs/raw/agera5_full_extent
+  target_grid: expanded native AgERA5 0.1-degree grid
+  target_crs: EPSG:4326
+  resampling: spherical overlap-area-weighted mean from CHIRPS source cells
+  agera5_units: mm/day
+  agera5_temporal_aggregation: sum all daily values within each calendar month
+  leap_days: retain for monthly comparison
+  missing_data: Do not impute; calculate paired metrics only where both monthly totals are valid.
+  metrics:
+    - area-weighted monthly climatology bias by country
+    - area-weighted percent bias by country
+    - per-grid-cell bias, percent bias, and Pearson correlation by calendar month
+    - country time-series correlation by calendar month
+    - AgERA5/CHIRPS missingness and valid CHIRPS area fraction
+  pass_fail_thresholds: none
+
+country_boundaries:
+  provider: geoBoundaries gbOpen ADM0
+  point_assignment: Assign each analysis-grid cell to the country containing its center.
+  Ghana:
+    iso3: GHA
+    boundary_id: GHA-ADM0-71095829
+  Cote_d_Ivoire:
+    iso3: CIV
+    boundary_id: CIV-ADM0-2848817
+  raw_directory: 01_inputs/raw/boundaries
+
+outputs:
+  directory: 01_inputs/processed/validation_full_extent
+  status: validation_complete
+  period: "2000-2020"
+  months_compared: 252
+  grid_shape_lat_lon: [80, 130]
+  country_cells:
+    GHA: 1954
+    CIV: 2635
+  country_pair_missing_fraction:
+    GHA: 0
+    CIV: 0
+  country_summary_scope: "The expanded AgERA5 bounds cover both pinned country polygons; all grid cells assigned to each country have complete paired monthly coverage."
+  country_summary:
+    GHA:
+      annual_area_weighted_percent_bias: 21.478
+      country_timeseries_correlation_range_by_calendar_month: [0.323, 0.862]
+      mean_country_timeseries_correlation: 0.702
+    CIV:
+      annual_area_weighted_percent_bias: 7.966
+      country_timeseries_correlation_range_by_calendar_month: [0.491, 0.857]
+      mean_country_timeseries_correlation: 0.705
+  full_bounding_box:
+    agera5_missing_cell_months: 373716
+    chirps_missing_cell_months: 390348
+    mean_chirps_valid_area_fraction: 0.83935
+    note: "Missing cells are outside country-assigned grid cells; the rectangular region includes ocean and neighboring territory."
+  files:
+    comparison_cube:
+      path: 01_inputs/processed/validation_full_extent/chirps_v3_agera5_monthly_2000_2020.nc
+      sha256: 5f3a3f3c1647d734c20c0caf7fee9afeea1e4b179323dd15cf32d6da650df687
+    cell_month_metrics:
+      path: 01_inputs/processed/validation_full_extent/chirps_v3_cell_month_metrics_2000_2020.csv
+      sha256: 714b1f20b3c221fdfbf5b20f3c451928359e16f71f84440c6983c27b51302692
+    country_month_metrics:
+      path: 01_inputs/processed/validation_full_extent/chirps_v3_country_month_metrics_2000_2020.csv
+      sha256: 8ea6673e14a9faeb3b7f58170f16723dbd30422c32c6d65a0fd6662810f5ee9d
+    run_summary:
+      path: 01_inputs/processed/validation_full_extent/chirps_v3_validation_summary_2000_2020.yml
+      sha256: 367fa8387d9da6e0c60d596ef6daff49a8cad7aa3dc9c6ecfabef89b7f9b599c
+  completed_date: "2026-09-26"
+
+rules:
+  - "Use final CHIRPS v3 monthly product, not daily CHIRPS v3 disaggregated from pentads."
+  - "Keep raw AgERA5 archives unchanged and in their separate extent-specific directories."
+  - "Do not interpret precipitation comparison as crop-yield validation."
+  - "Use no arbitrary pass/fail thresholds; quantify and report discrepancies."

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata in this file."
+title: "SIMPLE-Cacao-WA"
+type: software
+authors:
+  - name: "SIMPLE-Cacao-WA contributors"
+abstract: "Reproducible workflow applying published-parameter SIMPLE-Cacao to model relative climatic suitability for cocoa in Ghana and Cote d'Ivoire. Outputs are climatic-response proxies, not farm-yield predictions."
+version: "0.0.0"
+date-released: "2026-09-22"
+license: "Apache-2.0"
+keywords:
+  - cacao
+  - cocoa
+  - climate impacts
+  - crop model
+  - SIMPLE
+  - Ghana
+  - Cote d'Ivoire

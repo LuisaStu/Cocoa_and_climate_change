@@ -1,0 +1,16 @@
+source: "README.md#doc-readme-plan provisional scalar defaults"
+status: "not cacao observations; used only for scalar tests until spatial SoilGrids processing"
+
+soil:
+  awc_mm:
+    value: 150
+    note: "placeholder plant-available water capacity for scalar tests"
+  runoff_curve_number:
+    value: 70
+    prior_range: [55, 85]
+  deep_drainage_coefficient:
+    value: 0.5
+    prior_range: [0.2, 0.8]
+  rooting_depth_mm:
+    value: 1500
+    prior_range: [1000, 2000]

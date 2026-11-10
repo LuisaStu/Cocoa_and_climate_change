@@ -1,0 +1,27 @@
+{
+  "description": "Minimal scalar SIMPLE-Cacao-WA parameter schema",
+  "required_crop_parameters": [
+    "tsum",
+    "hi",
+    "i50a",
+    "i50b",
+    "tbase",
+    "topt",
+    "rue",
+    "i50max_h",
+    "i50max_w",
+    "t_heat",
+    "t_extreme",
+    "sco2",
+    "swater",
+    "fsolar_max",
+    "initial_fsolar",
+    "max_cycle_days"
+  ],
+  "required_soil_parameters": [
+    "awc_mm",
+    "runoff_curve_number",
+    "deep_drainage_coefficient",
+    "rooting_depth_mm"
+  ]
+}

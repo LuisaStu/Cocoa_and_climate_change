@@ -1,0 +1,95 @@
+schema_version: 1
+status: exploratory_screening_envelopes_not_probability_distributions
+purpose: >
+  Quantify robustness of relative climatic-suitability responses without
+  fitting model parameters to Ghanaian or Ivorian observed yields.
+design:
+  method: one_at_a_time_low_reference_high
+  reference_config: 03_parameters/crop/cacao_suitability_baseline.yml
+  include_interactions_only_after_single_parameter_screen: true
+  parameter_selection_from_observed_yield: prohibited
+  report_absolute_yield_as_outcome: false
+  report_relative_suitability_index: true
+  reference_cohort_start_years_inclusive: [2000, 2019]
+parameters:
+  tbase_c:
+    reference: 10.0
+    range: [9.0, 13.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; not a regional estimate.
+  topt_c:
+    reference: 26.0
+    range: [24.0, 28.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; not a regional estimate.
+  tsum_c_days:
+    reference: 2016.0
+    range: [1192.0, 2906.0]
+    status: exploratory_regional_anchor_span_not_uncertainty_interval
+    source: 03_parameters/crop/cacao_published.yml
+    interpretation: >
+      Span of reported Colombian regional calibration anchors; broad stress
+      test only, not a distribution for Ghana or Cote d'Ivoire.
+  i50a_c_days:
+    reference: 680.0
+    range: [500.0, 900.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; not a calibrated interval.
+  i50b_c_days:
+    reference: 680.0
+    range: [500.0, 900.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; not a calibrated interval.
+  t_heat_c:
+    reference: 35.0
+    range: [32.0, 38.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; do not call a validated heat threshold.
+  t_extreme_c:
+    reference: 40.0
+    range: [38.0, 43.0]
+    status: exploratory_range_requires_source_review
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: Sensitivity envelope only; do not call a validated lethal threshold.
+  swater:
+    reference: 0.0
+    range: [0.5, 2.5]
+    status: exploratory_water_stress_sensitivity_not_published_cacao_calibration
+    source: 03_parameters/crop/cacao_west_africa_prior.yml
+    interpretation: >
+      Report separately from the S_water=0 reference. Literature support and
+      response interpretation must be reviewed before treating these cases
+      as plausible suitability bounds.
+  rooting_depth_mm:
+    reference: 1500.0
+    range: [1000.0, 2000.0]
+    status: soil_sensitivity_from_project_design
+    source: 03_parameters/soil/soil_priors.yml
+    interpretation: Evaluate alongside the corresponding SoilGrids AWC derivation.
+  sco2_per_ppm:
+    reference: 0.0
+    range: null
+    status: fixed_zero_until_response_scaling_is_justified
+    source: 03_parameters/crop/cacao_published.yml
+    interpretation: Do not map the reported CO2 RUE=0.09 entry to this coefficient.
+excluded_from_relative_index:
+  rue_g_mj:
+    reference: 0.6
+    reason: >
+      RUE multiplies biomass linearly and does not affect the daily stress or
+      canopy pathways; it cancels in cellwise historical normalization.
+  hi_fraction:
+    reference: 0.30
+    reason: >
+      Harvest index multiplies final biomass linearly and therefore cancels
+      in cellwise historical normalization.
+limitations:
+  - These ranges are deterministic screening envelopes, not probability distributions or confidence intervals.
+  - The existing prior file explicitly says ranges are not direct West African cacao measurements.
+  - No range may be described as locally validated unless supported by independent biological evidence.
+  - No parameter is to be selected by matching farm-yield observations.

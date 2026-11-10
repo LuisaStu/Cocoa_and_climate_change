@@ -1,0 +1,42 @@
+source: "README.md#doc-readme-plan published cacao parameter summary"
+status: "published anchors plus explicit audit flags"
+
+published_core:
+  hi: 0.30
+  i50a_c_days: 680
+  i50b_c_days: 680
+  tbase_c: 10
+  topt_c: 26
+  t_heat_c: 35
+  t_extreme_c: 40
+  swater: 0
+
+regional_calibration_anchors:
+  - region: "Apartado"
+    tsum_c_days: 2906
+    rue_g_mj: 0.6
+    observed_yield_kg_ha_yr: 3378
+  - region: "Arauca"
+    tsum_c_days: 2764
+    rue_g_mj: 0.7
+    observed_yield_kg_ha_yr: 3981
+  - region: "Santander"
+    tsum_c_days: 2016
+    rue_g_mj: 0.6
+    observed_yield_kg_ha_yr: 2687
+  - region: "Cali"
+    tsum_c_days: 1912
+    rue_g_mj: 0.5
+    observed_yield_kg_ha_yr: 1900
+  - region: "Caldas"
+    tsum_c_days: 1192
+    rue_g_mj: 0.6
+    observed_yield_kg_ha_yr: 740
+
+audit_flags:
+  sco2:
+    value_in_cacao_table: 0.09
+    status: "do not use for future scenarios until scaling is scientifically reviewed"
+  water_stress:
+    published_value: 0
+    status: "published cacao application disabled water stress"

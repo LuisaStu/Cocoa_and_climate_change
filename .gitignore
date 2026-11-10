@@ -1,0 +1,17 @@
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+__pycache__/
+*.pyc
+pytest-cache-files-*/
+.qa_*/
+
+# Source downloads and optional bulk validation data are tracked by manifests,
+# not committed as large binary files.
+/01_inputs/raw/
+/01_inputs/processed/climate_full_extent/daily/
+/01_inputs/processed/validation_full_extent/
+
+# Retrieved reference article; keep its retrieval metadata, not the PDF.
+/01_inputs/external/asante_ghana/reference/*.pdf

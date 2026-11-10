@@ -1,0 +1,15 @@
+{
+  "retrieved_utc": "2026-09-28T22:07:57.407487+00:00",
+  "source_url": "https://raw.githubusercontent.com/WCRP-CMIP/CMIP6_CVs/master/CMIP6_source_id.json",
+  "sha256": "6e6772a545d8abcfdce6e79ed1dc92fdee90a351f5a6b8748920d7e817404759",
+  "version_metadata": {
+    "CV_collection_modified": "Thu Sep  4 16:01:22 2025 -0700",
+    "CV_collection_version": "6.2.60.0",
+    "author": "Paul J. Durack <durack1@llnl.gov>",
+    "institution_id": "PCMDI",
+    "previous_commit": "6d8517ab7efac022ccb6bf847bf412683d524ee7",
+    "source_id_CV_modified": "Fri Apr 18 16:28:35 2025 -0700",
+    "source_id_CV_note": "Revised IPSL-CM6A-ATM-LR-REPROBUS source_id entry",
+    "specs_doc": "v6.2.7 (10th September 2018; https://goo.gl/v1drZl)"
+  }
+}

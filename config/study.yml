@@ -1,0 +1,39 @@
+project:
+  name: SIMPLE-Cacao-WA
+  domain: Ghana and Cote d'Ivoire
+
+domain:
+  bbox_lonlat:
+    west: -9.0
+    south: 4.0
+    east: 4.0
+    north: 12.0
+  note: "Expanded shared acquisition subset covering Ghana and Cote d'Ivoire."
+
+historical_climate:
+  agera5_years: [2000, 2020]
+  baseline_years: [2000, 2020]
+
+soilgrids:
+  access_method: WCS
+  source_url: https://maps.isric.org/mapserv
+  subsetting_crs: "http://www.opengis.net/def/crs/EPSG/0/4326"
+  output_crs: "http://www.opengis.net/def/crs/EPSG/0/4326"
+  output_format: GEOTIFF_INT16
+  prediction: Q0.5
+  depths_cm:
+    - 0-5cm
+    - 5-15cm
+    - 15-30cm
+    - 30-60cm
+    - 60-100cm
+    - 100-200cm
+  awc_source_properties:
+    field_capacity: wv0033
+    wilting_point: wv1500
+  supporting_properties:
+    - bdod
+    - cfvo
+    - clay
+    - sand
+    - silt

@@ -1,0 +1,86 @@
+dataset:
+  name: AgERA5
+  provider: Copernicus Climate Data Store
+  cds_dataset: sis-agrometeorological-indicators
+  source_url: https://cds.climate.copernicus.eu/datasets/reanalysis-agera5-single-levels
+  access: authenticated
+  licence_terms_accepted: true
+  raw_directory: 01_inputs/raw/agera5_full_extent
+  geographic_subset:
+    label: Ghana and Cote d'Ivoire full-country extent
+    area_north_west_south_east: [12, -9, 4, 4]
+  years:
+    requested: "2000-2020"
+    note: "Full-country domain includes the western portion of Cote d'Ivoire."
+  status: downloaded_and_audited
+
+request_template:
+  version: "2_0"
+  format: zip
+  months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+  days: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+
+variables:
+  precipitation:
+    cds_variable: precipitation_flux
+    statistic: null
+    expected_archives_2000_2020: 21
+  reference_et:
+    cds_variable: reference_evapotranspiration
+    statistic: null
+    expected_archives_2000_2020: 21
+  solar_radiation:
+    cds_variable: solar_radiation_flux
+    statistic: null
+    expected_archives_2000_2020: 21
+  tmax:
+    cds_variable: 2m_temperature
+    statistic: 24_hour_maximum
+    expected_archives_2000_2020: 21
+  tmean:
+    cds_variable: 2m_temperature
+    statistic: 24_hour_mean
+    expected_archives_2000_2020: 21
+  tmin:
+    cds_variable: 2m_temperature
+    statistic: 24_hour_minimum
+    expected_archives_2000_2020: 21
+  vpd:
+    cds_variable: vapour_pressure_deficit_at_maximum_temperature
+    statistic: null
+    expected_archives_2000_2020: 21
+
+expected_coverage:
+  variables: 7
+  years: 21
+  archives: 147
+  sha256_inventory: 01_inputs/manifests/agera5_full_extent_sha256.txt
+
+latest_inventory_snapshot:
+  date: "2026-09-26"
+  status: complete
+  method: "Full ZIP CRC scan, annual-variable coverage audit, daily NetCDF member/date coverage check, and SHA-256 generation; read-only with no extraction."
+  valid_archives: 147
+  corrupt_archives: 0
+  missing_archives: 0
+  duplicate_variable_year_pairs: 0
+  daily_member_count_mismatches: 0
+  daily_date_coverage_issues: 0
+  sha256_checksums: 147
+  valid_size_gb: 2.464
+  valid_archives_by_variable:
+    precipitation: 21
+    reference_et: 21
+    solar_radiation: 21
+    tmax: 21
+    tmean: 21
+    tmin: 21
+    vpd: 21
+  sample_grid_lat_lon: [80, 130]
+  sample_longitude_centers: [-8.9, 4.0]
+
+rules:
+  - "Never store CDS credentials in this manifest."
+  - "Use a separate output directory because the older archives cover a smaller geographic subset."
+  - "Validate archive integrity, daily members, dates, and SHA-256 before marking this manifest complete."
+  - "Do not start climate reprojection, soil-profile processing, cocoa masking, or model simulations until this expanded domain is audited."
