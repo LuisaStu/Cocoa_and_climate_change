@@ -12,7 +12,7 @@ domain:
 
 historical_climate:
   agera5_years: [2000, 2020]
-  baseline_years: [2000, 2020]
+  baseline_years: [2000, 2019]
 
 soilgrids:
   access_method: WCS

@@ -32,13 +32,13 @@ study:
 
 selection:
   status: historical_diagnostics_and_lineage_review_complete_ensemble_proposed
-  daily_spatial_report: README.md#doc-12-docs-gcm-daily-spatial-screening-md
-  lineage_report: README.md#doc-12-docs-gcm-lineage-review-md
+  daily_spatial_report: 06_validation/historical_gcm/daily_spatial/manifest.json
+  lineage_report: README.md#why-these-scenarios-and-model-weights
   ensemble_proposal:
     status: proposed_for_scientific_review
     primary: Retain all eight candidates with one member each and equal model weights.
     sensitivity: Six equal component groups; CMCC-ESM2, NorESM2-MM and TaiESM1 share one group.
-  historical_screening_report: README.md#doc-12-docs-historical-gcm-screening-md
+  historical_screening_report: 06_validation/historical_gcm/screening_manifest.json
   historical_screening_outputs: 06_validation/historical_gcm
   co2_primary_design: "neutral; SIMPLE S_CO2 coefficient = 0"
   final_selection_requires:

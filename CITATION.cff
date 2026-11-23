@@ -2,9 +2,10 @@ cff-version: 1.2.0
 message: "If you use this project, please cite it using the metadata in this file."
 title: "SIMPLE-Cacao-WA"
 type: software
+repository-code: "https://github.com/LuisaStu/Cocoa_and_climate_change"
 authors:
   - name: "SIMPLE-Cacao-WA contributors"
-abstract: "Reproducible workflow applying published-parameter SIMPLE-Cacao to model relative climatic suitability for cocoa in Ghana and Cote d'Ivoire. Outputs are climatic-response proxies, not farm-yield predictions."
+abstract: "Reproducible workflow applying published-parameter SIMPLE-Cacao to estimate relative cohort biomass responses to temperature and shortwave radiation in Ghana and Cote d'Ivoire. The study uses gridded inputs and published parameters, with farm-level calibration and validation outside its scope."
 version: "0.0.0"
 date-released: "2026-09-22"
 license: "Apache-2.0"

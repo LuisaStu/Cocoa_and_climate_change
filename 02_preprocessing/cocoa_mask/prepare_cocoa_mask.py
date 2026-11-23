@@ -85,7 +85,7 @@ def _country_coverage(
             "grid_cells": int(np.count_nonzero(country)),
             "valid_grid_cells": int(np.count_nonzero(valid)),
             "uncovered_grid_cells": int(np.count_nonzero(country & ~np.isfinite(fraction))),
-            "coverage_percent": (
+            "coverage_percent": float(
                 100.0 * np.count_nonzero(valid) / np.count_nonzero(country)
                 if np.any(country)
                 else 0.0

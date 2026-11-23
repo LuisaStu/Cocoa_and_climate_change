@@ -19,7 +19,7 @@ from scipy.ndimage import distance_transform_edt
 BASE_URL = "https://maps.isric.org/mapserv"
 DOWNLOAD_DEPTHS_CM = ("0-5cm", "5-15cm", "15-30cm", "30-60cm", "60-100cm", "100-200cm")
 PROPERTIES = ("wv0033", "wv1500", "bdod", "cfvo", "clay", "sand", "silt")
-DEFAULT_PROPERTIES = ("wv0033", "wv1500")
+DEFAULT_PROPERTIES = ("wv0033", "wv1500", "cfvo")
 DEFAULT_BBOX = (-9.0, 4.0, 4.0, 12.0)
 DEFAULT_CRS = "http://www.opengis.net/def/crs/EPSG/0/4326"
 DEFAULT_OUTPUT_DIRECTORY = Path("01_inputs/raw/soilgrids_full_extent")
@@ -498,7 +498,7 @@ def prepare_parse_args() -> argparse.Namespace:
         default=Path("01_inputs/manifests/soilgrids_full_extent_manifest.yml"),
     )
     parser.add_argument("--max-fill-distance-cells", type=float, default=2.0)
-    return parser.prepare_parse_args()
+    return parser.parse_args()
 
 
 def prepare_main() -> None:

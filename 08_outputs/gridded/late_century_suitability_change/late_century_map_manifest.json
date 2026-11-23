@@ -46,6 +46,7 @@
     ]
   },
   "monthly_aggregation": "equal-weighted within each seasonal window; no flowering-intensity weights",
+  "country_summary_definition": "Cocoa-area-weighted mean of the cellwise ensemble median. The direction fraction is the cocoa-area-weighted model fraction with strictly positive change in each cell.",
   "parameters": "published cacao anchors; SCO2=0; S_water=0; AWC 1500 mm",
   "water_and_rainfall_note": "The reference S_water=0 disables water-deficit biomass response. The four-variable CMIP6 input set omits ET0 and does not represent drought or excess-rainfall damage.",
   "country_cocoa_weighted_summary": {
@@ -110,7 +111,25 @@
     "ssp585_major_rainy_2060_2079_median_change_percent.tif": "ae3b83b08663ee98e805c42ef106e477f0b4f4b9541998727c699d1ef1705dfb",
     "ssp245_minor_rainy_2060_2079_median_change_percent.tif": "834547eaccb6fd90dea670743dcf661d471e44010b25b0c39240220444142a9e",
     "ssp585_minor_rainy_2060_2079_median_change_percent.tif": "70bb6a184c479d1ddbac9f19e296921ae0ac39ff6bac4ac84eb9a311f20249e5",
-    "10_figures/maps/late_century_seasonal_suitability_change.png": "7746ca0f9af924cf880f440ea6649bcc646fb118c94ba2cb21c6e373b820e033"
+    "10_figures/maps/late_century_seasonal_suitability_change.png": "7746ca0f9af924cf880f440ea6649bcc646fb118c94ba2cb21c6e373b820e033",
+    "late_century_individual_model_country_change.csv": "a79ab5ecb53729288cdaa6a9ea3d3a24a57aa5b70139df418607289ad9e2f48c",
+    "10_figures/maps/late_century_individual_model_country_change.png": "982f005d0e17ae76ce2b403a7c945d1d1dca267a026357d8050262d5de44a527"
   },
-  "figure": "10_figures/maps/late_century_seasonal_suitability_change.png"
+  "figure": "10_figures/maps/late_century_seasonal_suitability_change.png",
+  "individual_model_outputs": {
+    "table": "08_outputs/gridded/late_century_suitability_change/late_century_individual_model_country_change.csv",
+    "figure": "10_figures/maps/late_century_individual_model_country_change.png",
+    "definition": "Cocoa-area-weighted means of individual model seasonal cell changes.",
+    "inputs_sha256": {
+      "08_outputs/gridded/historical_climatic_suitability/historical_cohort_biomass_response.tif": "d1abbafdc974c3459abc0d65146aa7996a8bd1052eaaa105b829ac58a87e03f8",
+      "08_outputs/gridded/historical_climatic_suitability/historical_run_manifest.json": "b8ea82dabf67e35de1d7d1e1e99d9004b0c2ac818d4e1d69c7b6ac130364d849",
+      "01_inputs/processed/grid_full_extent/model_grid_EPSG6933_11000m.tif": "6b908bdbc9b7a61b400d29d88cbc3143ffafeaf1ec9be2e0cba0b7fff9ea3d96",
+      "01_inputs/processed/cocoa_mask_full_extent/cocoa_fraction_EPSG6933_11000m.tif": "07be24507d4e91e0c6b94d611a55ef7aab707d572432158630fcd63f1c17156d",
+      "01_inputs/processed/soil_full_extent/soil_awc_EPSG6933_11000m.tif": "046c831143af0d0899d763e133769a1c028a70ca334bab5bfd1c5c559881a38d",
+      "config/gcm_ensemble_proposal.yml": "f648b961a355fabad8e6eead248f1138d639cf7d3a13b6b9f5da3658c306c788",
+      "03_parameters/flowering/cacao_seasonal_cohort_calendar.yml": "fa14cc85d82d18e32a569710dc6192a8fd23885248b99468f1d79db867b4ebe0",
+      "01_inputs/manifests/nex_gddp_scenario_full.json": "b9253b65abdfc0cb02c0f852d5ade65b1180593e7ea28d0fc0f0fe53f13f26c2",
+      "06_validation/historical_gcm/scenario_full_audit.json": "521b494cb8614548a9407ba4397bee2bbb05cbd467f09b49ed93a40d9ada7db3"
+    }
+  }
 }

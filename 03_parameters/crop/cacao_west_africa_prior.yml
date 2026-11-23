@@ -1,5 +1,6 @@
-source: "README.md#doc-readme-plan recommended thesis priors and approved CO2-neutral primary design"
-status: "thesis priors for West Africa; not published cacao measurements"
+source: "README.md#how-to-interpret-the-parameter-choices"
+status: "exploratory sensitivity assumptions for West Africa"
+scope: "The submitted study uses published baseline values and a historical sensitivity screen. The ranges below document assumptions and do not prescribe additional fitting or experiments."
 
 crop:
   tbase_c:
@@ -10,19 +11,19 @@ crop:
     treatment: "mostly fixed; sensitivity"
   tsum_c_days:
     prior_range: [1192, 2906]
-    treatment: "calibrate by region or cohort"
+    treatment: "historical sensitivity across published Colombian regional anchors"
   rue_g_mj:
     prior_range: [0.5, 0.7]
-    treatment: "calibrate near published cacao anchors"
+    treatment: "fixed at the published baseline value in the relative response analysis"
   harvest_index:
     prior_range: [0.25, 0.35]
     treatment: "sensitivity around published 0.30"
   i50a_c_days:
     prior_range: [500, 900]
-    treatment: "calibrate or sensitivity"
+    treatment: "historical sensitivity"
   i50b_c_days:
     prior_range: [500, 900]
-    treatment: "calibrate or sensitivity"
+    treatment: "historical sensitivity"
   t_heat_c:
     prior_range: [32, 38]
     treatment: "stress sensitivity"
@@ -37,7 +38,7 @@ crop:
     treatment: "high uncertainty"
   swater:
     prior_range: [0.5, 2.5]
-    treatment: "must be calibrated or sensitivity tested"
+    treatment: "historical sensitivity only"
   co2_response:
     primary_sco2_per_ppm: 0.0
     treatment: "CO2-neutral primary scenarios approved; reported cacao CO2 RUE is not an S_CO2 coefficient"
@@ -53,12 +54,12 @@ crop:
 management_and_canopy:
   fsolar_max:
     prior_range: [0.65, 0.95]
-    treatment: "calibrate from FPAR"
+    treatment: "fixed in the submitted analysis"
   initial_fsolar:
     prior_range: [0.005, 0.10]
     treatment: "replication or sensitivity"
 
 notes:
   - "These priors are intentionally broad and must not be cited as direct West African cacao measurements."
-  - "The published cacao application disabled drought stress, so nonzero swater is a thesis sensitivity/calibration choice."
+  - "The published cacao application disabled drought stress. Nonzero swater is an exploratory historical sensitivity choice."
   - "The cacao table's CO2 RUE entry lacks a verified mapping to SIMPLE S_CO2; primary future scenarios use no CO2 response."

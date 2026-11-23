@@ -1,10 +1,20 @@
 name: ci
 
 on:
+  push:
+  pull_request:
   workflow_dispatch:
 
 jobs:
-  placeholder:
+  checks:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "CI rules will be added after the first tested implementation step."
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: python -m pip install . pytest ruff
+      - run: python -m ruff check .
+      - run: python -m pytest

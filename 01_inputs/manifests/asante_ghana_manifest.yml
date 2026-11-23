@@ -1,61 +1,11 @@
-status: access_reconnaissance_complete_records_not_received
-checked_date: '2026-09-30'
-roadmap_step: 23
+status: literature_reference_only
+study_role: Published context on farm-level cocoa yield variability in Ghana.
+scope_decision: Farm-level records were unavailable to the project. Farm-data collection, local yield calibration and validation against observed farm yields are outside the submitted study.
 publication:
   doi: 10.1016/j.agsy.2021.103214
   title: Unravelling drivers of high variability of on-farm cocoa yields across environmental gradients in Ghana
   article_license: CC-BY-4.0
-  article_license_does_not_establish_record_permissions: true
   institutional_record: https://research.wur.nl/en/publications/unravelling-drivers-of-high-variability-of-on-farm-cocoa-yields-a/
 reference_artifacts:
-  - path: 01_inputs/external/asante_ghana/reference/asante_2021_article.pdf
-    artifact_type: reference_article_not_observations
-    sha256: b6350cc0086f3b5e2823891b03cf781cdc85053c7d84eba7898b980577bbe319
-    size_bytes: 2924351
+  - artifact_type: published_reference_article
     retrieval_record: 01_inputs/external/asante_ghana/reference/retrieval.json
-farm_data:
-  files: []
-  records_received: false
-  observed_rows: null
-  observed_unique_farms: null
-  observed_seasons: null
-  missingness: null
-  license: null
-  permitted_use_confirmed: false
-  redistribution_permission: null
-  coordinates_available: null
-  coordinate_crs: null
-  coordinate_precision_m: null
-  geographic_usability_confirmed: false
-  stable_farm_ids_available: null
-  restricted_storage_pointer: null
-paper_expectations_not_observed_counts:
-  unique_farms_methods: 3827
-  yield_observations: 4015
-  table_2_caption_farms: 3874
-  count_discrepancy: Methods and Table 2 differ; request reconciliation, do not silently select a replacement count.
-  seasons: ['2012/13', '2013/14', '2015/16', '2016/17', '2017/18', '2018/19']
-  zone_observations: {dry: 758, moist: 2011, wet: 1246}
-  management_subset: {farms: 134, observations: 267}
-  yield_units: kg dry beans ha-1 crop-year-1
-  crop_year: March through February of the following calendar year
-  production_methods_percent: {farmer_reports_checked_with_passbooks: 93, pod_counts: 7}
-  area_methods_percent: {GPS: 86, farmer_estimate: 14}
-  reported_conversion: {pods_per_kg_dry_beans: 28, kg_per_bag: 64}
-  exclusions: Paper reports excluding impossible extremes; exact source exclusions and low-yield threshold require clarification.
-access:
-  public_farm_download_found: false
-  finding_scope: No matching record-level download located in the institutional pages and targeted repository searches checked; not proof that no deposit exists.
-  publisher_page: Direct full-page access failed; indexed metadata available.
-  request_sent: false
-  request_draft: README.md#doc-12-docs-asante-data-request-draft-md
-  contact:
-    name: Dr. Paulina Ansaa Asante
-    current_institutional_email: paulina.asante@senckenberg.de
-    source: https://www.senckenberg.de/en/research/institutes-overview/sbikf-institut/movement-ecology-and-biodiversity-conservation/sbikf-sekt-global-land-systems-and-biodiversity/
-    publication_email_historical: paulinaansaa.asante@wur.nl
-gates:
-  step_23_complete: false
-  farm_grid_assignment_allowed: false
-  parameter_fitting_allowed: false
-  unresolved: [record_access, data_use_permission, usable_geography, stable_ids, actual_record_audit, count_reconciliation]

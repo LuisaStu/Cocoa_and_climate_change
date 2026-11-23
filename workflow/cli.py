@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 COMMANDS: dict[str, tuple[str, str]] = {
     "map": (
         "04_model/run_late_century_suitability_map.py",
-        "Generate the four-panel late-century rainy-season suitability map.",
+        "Generate the four-panel late-century map. Use --output-dir for a separate run.",
     ),
     "historical": (
         "04_model/run_historical_suitability.py",

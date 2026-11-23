@@ -2,7 +2,7 @@ dataset:
   name: AgERA5
   provider: Copernicus Climate Data Store
   cds_dataset: sis-agrometeorological-indicators
-  source_url: https://cds.climate.copernicus.eu/datasets/reanalysis-agera5-single-levels
+  source_url: https://cds.climate.copernicus.eu/datasets/sis-agrometeorological-indicators
   access: authenticated
   licence_terms_accepted: true
   raw_directory: 01_inputs/raw/agera5_full_extent

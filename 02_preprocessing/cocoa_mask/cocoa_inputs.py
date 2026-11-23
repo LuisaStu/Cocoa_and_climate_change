@@ -176,7 +176,7 @@ def _country_coverage(
             "grid_cells": int(np.count_nonzero(country)),
             "valid_grid_cells": int(np.count_nonzero(valid)),
             "uncovered_grid_cells": int(np.count_nonzero(country & ~np.isfinite(fraction))),
-            "coverage_percent": (
+            "coverage_percent": float(
                 100.0 * np.count_nonzero(valid) / np.count_nonzero(country)
                 if np.any(country)
                 else 0.0
@@ -368,7 +368,7 @@ def prepare_parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("01_inputs/manifests/cocoa_mask_abu_manifest.yml"),
     )
-    return parser.prepare_parse_args()
+    return parser.parse_args()
 
 
 def prepare_main() -> None:

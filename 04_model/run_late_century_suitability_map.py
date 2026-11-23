@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 import sys
@@ -57,6 +58,9 @@ START_YEARS = tuple(range(2060, 2080))
 SCENARIOS = {"ssp245": "SSP2-4.5", "ssp585": "SSP5-8.5"}
 WEATHER_KEYS = ("tmin_c", "tmax_c", "srad_mj_m2", "precip_mm")
 NODATA = -9999.0
+MODEL_COUNTRY_CSV = "late_century_individual_model_country_change.csv"
+MODEL_COUNTRY_FIGURE = "late_century_individual_model_country_change.png"
+COUNTRIES = {"GHA": (1, "Ghana", "#0072B2"), "CIV": (2, "Côte d’Ivoire", "#D55E00")}
 
 
 def _sha256(path: Path) -> str:
@@ -90,6 +94,17 @@ def summarize_ensemble(
     historical_month_means: np.ndarray,
     month_indices: list[int],
 ) -> tuple[np.ndarray, np.ndarray]:
+    model_changes = _seasonal_model_changes(
+        model_month_means, historical_month_means, month_indices
+    )
+    return np.median(model_changes, axis=0), np.mean(model_changes > 0, axis=0)
+
+
+def _seasonal_model_changes(
+    model_month_means: np.ndarray,
+    historical_month_means: np.ndarray,
+    month_indices: list[int],
+) -> np.ndarray:
     values = np.asarray(model_month_means, dtype=np.float64)
     historical = np.asarray(historical_month_means, dtype=np.float64)
     if values.ndim != 3 or values.shape[1:] != historical.shape or values.shape[0] == 0:
@@ -100,15 +115,12 @@ def summarize_ensemble(
         or any(index < 0 or index >= values.shape[1] for index in month_indices)
     ):
         raise ValueError("month_indices must be a nonempty list of unique valid month indices")
-    model_changes = np.stack(
+    return np.stack(
         [
             relative_change_percent(model, historical)[month_indices].mean(axis=0)
             for model in values
         ]
     )
-    median_change = np.median(model_changes, axis=0)
-    direction_agreement = np.mean(model_changes > 0, axis=0)
-    return median_change, direction_agreement
 
 
 def _weather_columns(grid_codes: np.ndarray, cell_ids: np.ndarray) -> np.ndarray:
@@ -309,6 +321,7 @@ def _plot_maps(
     cell_ids: np.ndarray,
     profile: dict[str, Any],
     grid_codes: np.ndarray,
+    figure_path: Path,
 ) -> None:
     plot_values = [
         values
@@ -381,22 +394,79 @@ def _plot_maps(
         ha="center",
         fontsize=9,
     )
-    FIGURE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    figure.savefig(FIGURE_PATH, dpi=220, bbox_inches="tight")
+    figure_path.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(figure_path, dpi=220, bbox_inches="tight")
     plt.close(figure)
 
 
-def _run() -> tuple[Path, dict[str, Path], Path]:
+def _write_model_country_outputs(
+    changes: dict[tuple[str, str, str], np.ndarray],
+    models: list[str],
+    season_labels: dict[str, str],
+    table_path: Path,
+    figure_path: Path,
+) -> None:
+    with table_path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(
+            ["scenario", "flowering_window", "climate_model", "country_iso3", "change_percent"]
+        )
+        for (scenario, season, country), values in changes.items():
+            writer.writerows(
+                (scenario, season, model, country, value)
+                for model, value in zip(models, values, strict=True)
+            )
+
+    figure, axes = plt.subplots(
+        2, 2, figsize=(10, 8), sharex=True, sharey=True, layout="constrained"
+    )
+    positions = np.arange(len(models))
+    for row, (season, label) in enumerate(season_labels.items()):
+        for column, (scenario, scenario_label) in enumerate(SCENARIOS.items()):
+            ax = axes[row, column]
+            ax.axvline(0, color="#555555", linewidth=0.9)
+            ax.grid(axis="x", color="#dddddd", linewidth=0.6)
+            ax.set_axisbelow(True)
+            for offset, (country, (_, name, color)) in zip(
+                (-0.14, 0.14), COUNTRIES.items(), strict=True
+            ):
+                ax.scatter(
+                    changes[scenario, season, country], positions + offset, color=color, label=name
+                )
+            ax.set_title(f"{scenario_label} · {label.lower()} season", loc="left")
+            ax.set_yticks(positions, models)
+    axes[0, 0].invert_yaxis()
+    axes[0, 0].legend(loc="best", frameon=False)
+    figure.suptitle(
+        "Late-century cocoa response by climate model\n"
+        "2060–2079 compared with 2000–2019 cohort starts",
+        fontsize=15,
+        fontweight="bold",
+    )
+    figure.supxlabel("Cocoa-area-weighted change in modeled cohort biomass (%)")
+    figure_path.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(figure_path, dpi=220)
+    plt.close(figure)
+
+
+def _run(
+    output_dir: Path = OUTPUT_DIR,
+    figure_path: Path = FIGURE_PATH,
+) -> tuple[Path, dict[str, Path], Path]:
     season_ids = ["major_rainy", "minor_rainy"]
     current_output_paths = [
-        OUTPUT_DIR / f"{scenario}_{season}_2060_2079_median_change_percent.tif"
+        output_dir / f"{scenario}_{season}_2060_2079_median_change_percent.tif"
         for scenario in SCENARIOS
         for season in season_ids
     ]
-    if FIGURE_PATH.exists() or any(path.exists() for path in current_output_paths):
+    manifest_path = output_dir / "late_century_map_manifest.json"
+    table_path = output_dir / MODEL_COUNTRY_CSV
+    comparison_path = figure_path.with_name(MODEL_COUNTRY_FIGURE)
+    additional_paths = (figure_path, manifest_path, table_path, comparison_path)
+    if any(path.exists() for path in (*current_output_paths, *additional_paths)):
         raise FileExistsError(
-            "Current seasonal map outputs already exist; move them before rerunning: "
-            f"{OUTPUT_DIR} or {FIGURE_PATH}"
+            "Seasonal map outputs already exist. Use --output-dir for a separate run: "
+            f"{output_dir} or {figure_path}"
         )
     ensemble_config = yaml.safe_load(ENSEMBLE_CONFIG.read_text(encoding="utf-8"))
     models = ensemble_config["primary"]["models"]
@@ -449,6 +519,8 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
     direction_agreement: dict[str, dict[str, np.ndarray]] = {
         season: {} for season in season_months
     }
+    country_codes = grid_codes.reshape(-1)[cell_ids]
+    model_country_changes: dict[tuple[str, str, str], np.ndarray] = {}
     for scenario in SCENARIOS:
         model_month_means = []
         for model in models:
@@ -458,19 +530,24 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
         model_month_means_array = np.stack(model_month_means)
         for season, season_month_list in season_months.items():
             month_indices = [months.index(month) for month in season_month_list]
-            median_change, agreement = summarize_ensemble(
+            changes = _seasonal_model_changes(
                 model_month_means_array,
                 historical_means,
                 month_indices,
             )
-            seasonal_maps[season][scenario] = median_change
-            direction_agreement[season][scenario] = agreement
+            seasonal_maps[season][scenario] = np.median(changes, axis=0)
+            direction_agreement[season][scenario] = np.mean(changes > 0, axis=0)
+            for country, (code, _, _) in COUNTRIES.items():
+                selected = country_codes == code
+                model_country_changes[scenario, season, country] = np.average(
+                    changes[:, selected], axis=1, weights=cocoa_weights[selected]
+                )
 
     outputs = {}
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     for season, scenario_maps in seasonal_maps.items():
         for scenario, values in scenario_maps.items():
-            path = OUTPUT_DIR / (
+            path = output_dir / (
                 f"{scenario}_{season}_2060_2079_median_change_percent.tif"
             )
             _write_geotiff(
@@ -488,15 +565,14 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
         cell_ids,
         profile,
         grid_codes,
+        figure_path,
     )
-    manifest_path = OUTPUT_DIR / "late_century_map_manifest.json"
     country_summary = {}
-    country_codes = grid_codes.reshape(-1)[cell_ids]
     for season, scenario_maps in seasonal_maps.items():
         country_summary[season] = {}
         for scenario, values in scenario_maps.items():
             country_summary[season][scenario] = {}
-            for country, code in (("GHA", 1), ("CIV", 2)):
+            for country, (code, _, _) in COUNTRIES.items():
                 selected = country_codes == code
                 weights = cocoa_weights[selected] / cocoa_weights[selected].sum()
                 country_summary[season][scenario][country] = {
@@ -510,6 +586,9 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
                         )
                     ),
                 }
+    _write_model_country_outputs(
+        model_country_changes, models, season_labels, table_path, comparison_path
+    )
     manifest = {
         "status": "complete_late_century_modeled_suitability_map",
         "interpretation": (
@@ -530,6 +609,11 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
         "monthly_start_cases": months,
         "seasonal_months": season_months,
         "monthly_aggregation": "equal-weighted within each seasonal window; no flowering-intensity weights",
+        "country_summary_definition": (
+            "Cocoa-area-weighted mean of the cellwise ensemble median. "
+            "The direction fraction is the cocoa-area-weighted model fraction with "
+            "strictly positive change in each cell."
+        ),
         "parameters": "published cacao anchors; SCO2=0; S_water=0; AWC 1500 mm",
         "water_and_rainfall_note": (
             "The reference S_water=0 disables water-deficit biomass response. The four-variable "
@@ -552,23 +636,37 @@ def _run() -> tuple[Path, dict[str, Path], Path]:
         },
         "outputs_sha256": {
             **{path.name: _sha256(path) for path in outputs.values()},
-            FIGURE_PATH.relative_to(ROOT).as_posix(): _sha256(FIGURE_PATH),
+            table_path.name: _sha256(table_path),
+            comparison_path.relative_to(ROOT).as_posix(): _sha256(comparison_path),
+            figure_path.relative_to(ROOT).as_posix(): _sha256(figure_path),
         },
-        "figure": FIGURE_PATH.relative_to(ROOT).as_posix(),
+        "individual_model_outputs": {
+            "table": table_path.relative_to(ROOT).as_posix(),
+            "figure": comparison_path.relative_to(ROOT).as_posix(),
+            "definition": "Cocoa-area-weighted means of individual model seasonal cell changes.",
+        },
+        "figure": figure_path.relative_to(ROOT).as_posix(),
     }
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    for obsolete_name in (
-        "ssp245_2060_2079_median_change_percent.tif",
-        "ssp585_2060_2079_median_change_percent.tif",
-    ):
-        (OUTPUT_DIR / obsolete_name).unlink(missing_ok=True)
-    (FIGURE_PATH.parent / "late_century_suitability_change.png").unlink(missing_ok=True)
-    return FIGURE_PATH, outputs, manifest_path
+    return figure_path, outputs, manifest_path
 
 
 if __name__ == "__main__":
-    figure, rasters, manifest = _run()
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, help="Write all outputs to a new project directory")
+    args = parser.parse_args()
+    if args.output_dir is None:
+        figure, rasters, manifest = _run()
+    else:
+        directory = (ROOT / args.output_dir).resolve()
+        if not directory.is_relative_to(ROOT):
+            parser.error("--output-dir must be inside the project")
+        figure, rasters, manifest = _run(directory, directory / FIGURE_PATH.name)
     print(f"map: {figure.relative_to(ROOT)}")
     for scenario, raster in rasters.items():
         print(f"{scenario}: {raster.relative_to(ROOT)}")
+    print(f"individual model CSV: {(manifest.parent / MODEL_COUNTRY_CSV).relative_to(ROOT)}")
+    print(f"individual model figure: {figure.with_name(MODEL_COUNTRY_FIGURE).relative_to(ROOT)}")
     print(f"manifest: {manifest.relative_to(ROOT)}")

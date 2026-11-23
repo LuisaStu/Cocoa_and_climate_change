@@ -2,7 +2,7 @@
 name = "simple-cacao-wa"
 version = "0.0.0"
 description = "Reproducible cocoa climate-suitability modeling for Ghana and Cote d'Ivoire"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
   "numpy",
   "pandas",

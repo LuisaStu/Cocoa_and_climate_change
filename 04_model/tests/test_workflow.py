@@ -70,3 +70,8 @@ def test_cli_help_does_not_launch_a_workflow(monkeypatch, capsys):
 def test_cli_rejects_unknown_workflow():
     with pytest.raises(SystemExit, match="2"):
         cli.main(["not-a-workflow"])
+
+
+@pytest.mark.parametrize("command", ["cocoa-mask-prepare", "soil-prepare"])
+def test_prepare_workflows_reject_unknown_options(command):
+    assert cli.main([command, "--unexpected-option"]) == 2

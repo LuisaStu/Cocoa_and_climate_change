@@ -287,7 +287,6 @@ def test_grid_defaults_use_full_extent_paths():
     )
 
 # Consolidated from test_nex_historical_acquisition.py
-from io import BytesIO
 from urllib.parse import parse_qs, urlparse
 
 import xarray as xr
@@ -358,9 +357,9 @@ def test_payload_validation_accepts_noleap_calendar_with_older_epoch() -> None:
             "lon": ("lon", [351.0, 351.25]),
         },
     )
-    payload = dataset.to_netcdf(BytesIO(), engine="scipy")
+    payload = dataset.to_netcdf(engine="scipy")
     assert payload is not None
-    metadata = NEX_DOWNLOADER.validate_payload(payload, "pr", year, bbox)
+    metadata = NEX_DOWNLOADER.validate_payload(bytes(payload), "pr", year, bbox)
     assert metadata["days"] == 365
     assert metadata["calendar"] == "365_day"
     assert metadata["time_units"] == "days since 1850-1-1"
