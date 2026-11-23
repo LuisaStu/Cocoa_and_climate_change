@@ -16,6 +16,9 @@ dependencies = [
   "cdsapi",
 ]
 
+[project.optional-dependencies]
+carbon = ["codecarbon>=3.3,<4"]
+
 [tool.pytest.ini_options]
 testpaths = ["04_model/tests"]
 addopts = "-q -p no:cacheprovider"

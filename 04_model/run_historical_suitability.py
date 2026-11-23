@@ -222,7 +222,9 @@ def _load_inputs():
     )
 
 
-def _run(output_dir: Path, overwrite: bool = False) -> dict[str, Path]:
+def _run(
+    output_dir: Path, overwrite: bool = False, summary_path: Path | None = None
+) -> dict[str, Path]:
     seasonal_calendar, season_by_month, start_day = _load_seasonal_calendar()
     months = list(season_by_month)
     (
@@ -240,7 +242,8 @@ def _run(output_dir: Path, overwrite: bool = False) -> dict[str, Path]:
 
     response_path = output_dir / "historical_cohort_biomass_response.tif"
     index_path = output_dir / "historical_relative_suitability_index.tif"
-    summary_path = ROOT / "08_outputs/country/historical_country_summary.csv"
+    if summary_path is None:
+        summary_path = ROOT / "08_outputs/country/historical_country_summary.csv"
     metadata_path = output_dir / "historical_run_manifest.json"
     outputs = (response_path, index_path, summary_path, metadata_path)
     existing = [path for path in outputs if path.exists()]
@@ -523,10 +526,17 @@ def main() -> None:
         action="store_true",
         help="Replace existing historical outputs after a successful run.",
     )
+    parser.add_argument("--output-dir", type=Path, help="Write all outputs to a project directory")
     args = parser.parse_args()
     output_dir = ROOT / "08_outputs/gridded/historical_climatic_suitability"
+    summary_path = None
+    if args.output_dir is not None:
+        output_dir = (ROOT / args.output_dir).resolve()
+        if not output_dir.is_relative_to(ROOT):
+            parser.error("--output-dir must be inside the project")
+        summary_path = output_dir / "historical_country_summary.csv"
     try:
-        outputs = _run(output_dir, overwrite=args.overwrite)
+        outputs = _run(output_dir, overwrite=args.overwrite, summary_path=summary_path)
     except (FileNotFoundError, FileExistsError, ValueError) as exc:
         parser.error(str(exc))
     for name, path in outputs.items():

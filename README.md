@@ -165,6 +165,28 @@ Some historical diagnostics record the script names or absolute paths from the r
 
 GitHub Actions runs the tests and Ruff on pushes and pull requests. For container-based testing, run `docker compose -f 13_env/docker-compose.yml up --build`. The Docker build context excludes bulk inputs and published results, so this service runs the tests. Use the Conda workflow above to reproduce the maps with the local data. [CI configuration](.github/workflows/ci.yml), [container configuration](13_env/docker-compose.yml).
 
+## Compute energy and carbon emissions
+
+The reference benchmark tracks two stages separately on a Windows computer using CodeCarbon in offline process mode. The historical stage rebuilds the 2000–2019 cohort baseline from prepared AgERA5 rasters. The late-century stage reads the archived historical baseline and local scenario files, regrids scenario weather, runs all eight models under both scenarios and writes the maps and comparison outputs. CodeCarbon estimates electricity use in kWh and converts it to kg CO₂e using 384.4 g CO₂e per kWh, its offline United States grid factor for this run.
+
+| Workflow | Tracked time (s) | Estimated energy (kWh) | Estimated emissions (kg CO₂e) |
+|---|---:|---:|---:|
+| Historical baseline | 115.3 | 0.000427 | 0.000164 |
+| Late-century mapping | 717.9 | 0.00263 | 0.00101 |
+| **Total** | **833.2** | **0.00306** | **0.00117** |
+
+The total comes from one successful run of each stage. See the exported values and hardware metadata in the [CodeCarbon benchmark CSV](08_outputs/compute_emissions/codecarbon.csv).
+
+The benchmark covers these two reproducible runs. Raw-data download and preparation of the archived inputs, exploratory screening, software development, earlier runs and hardware manufacture are outside the measured boundary. The benchmark used CodeCarbon 3.3.3 on an Intel Core i7-6600U with four logical CPUs and no GPU. The tracker estimated CPU energy from CPU load and rated power, and estimated RAM energy with its RAM power model. These figures depend on the hardware, tracking method, runtime and electricity mix. [CodeCarbon software citation](https://doi.org/10.5281/zenodo.11171501), [tracking methods](https://docs.codecarbon.io/latest/how-to/configuration/), [output units](https://docs.codecarbon.io/latest/reference/output/).
+
+From the project root, install the carbon-tracking extra and use fresh output paths. Set `--country` to the machine's physical location and optionally pass a supported grid region with `--region`.
+
+```powershell
+python -m pip install ".[carbon]"
+python workflow/measure_emissions.py --country USA --output .qa_carbon/historical.csv historical --output-dir .qa_carbon/historical
+python workflow/measure_emissions.py --country USA --output .qa_carbon/map.csv map --output-dir .qa_carbon/map
+```
+
 ## Project layout
 
 - `01_inputs/` — source manifests, small processed map inputs, and external metadata
